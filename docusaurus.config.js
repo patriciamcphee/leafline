@@ -116,7 +116,7 @@ const config = {
         title: "",
         logo: {
           alt: "",
-          src: "img/dialogix-studio-logo-2x.png",
+          src: "img/final-logo.png",
         },
         items: [
           /*         { 
