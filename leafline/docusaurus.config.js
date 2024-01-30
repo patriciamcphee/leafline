@@ -38,9 +38,9 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.png",
+  favicon: "img/favicon-32x32.png",
   organizationName: "patriciamcphee", // Usually your GitHub org/user name.
-  projectName: "dialogix-studio", // Usually your repo name.
+  projectName: "leafline", // Usually your repo name.
   trailingSlash: false,
   customFields: {
     // Put your custom environment here
