@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Continual Learning",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+//    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
         We like to think of ourselves as lifelong students. With the spirit of an Innovative Thinker, we're always looking for ways to better understand and improve chatbot experiences, blending human conversation's nuances with AI's wonders.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: "The Care in Crafting",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+//    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
         Each project is a new adventure for us. With the heart of an Artisanal Craftsperson, we pour dedication and careful thought into our work. It's not just designing but also connecting, understanding, and narrating.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: "Bridging Two Worlds",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+//    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
         Our passion is to bring worlds closer. Recognizing the fine balance between technological precision and human warmth, we hope to serve as a modest bridge, making every digital conversation feel just a bit more human.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ title, description }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">

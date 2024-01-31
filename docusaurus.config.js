@@ -63,7 +63,7 @@ const config = {
         docs: {
           sidebarCollapsed: true,
           breadcrumbs: false,
-          sidebarPath: require.resolve("./sidebars.js"),
+         // sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
           showLastUpdateTime: true,
           //          editUrl:

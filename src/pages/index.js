@@ -7,8 +7,6 @@ import HomepageFeatures from "@site/src/components/Homepage";
 
 import styles from "./index.module.css";
 
-import Hero from "../../static/img/chatbot-landing-page-1.svg";
-
 import { Col, Divider, Row, Card, Space, Button, ConfigProvider } from "antd";
 const style = {
   color: "#fff",
@@ -24,7 +22,9 @@ function HomepageHeader() {
           <Col flex="1 1 250px">
             <div class="intro-text">
               <h1 class="intro-visual-header">
-                Transform Your Chatbot Dialogue
+                Landscape Design
+                Installation
+                Maintenance
               </h1>
               <p class="intro-text">
                 Crafting bot Conversations, Empowering Users
@@ -61,7 +61,7 @@ function HomepageHeader() {
           </Col>
           <Col flex="0 1 650px">
             <div className="intro-image">
-              <Hero />
+              
             </div>
           </Col>
         </Row>
