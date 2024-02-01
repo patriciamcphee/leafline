@@ -32,7 +32,7 @@ const config = {
     "docusaurus-theme-redoc",
   ],
 
-  title: "Dialogix Studio",
+  title: "Leafline Garden Design LLC",
   tagline: "Crafting Bot Conversations, Empowering Users",
   url: "https://leaflinegarden.design",
   baseUrl: "/",
@@ -124,19 +124,32 @@ const config = {
           label: "API", 
           position: "left" 
         },
-
+*/
         {
           type: 'doc',
-          docId: 'resume',
+          docId: 'page',
           position: 'right',
-          label: 'Resume',
+          label: 'Home',
         },
         {
-          to: '/blog', 
-          label: 'Blog', 
-          position: 'right'
-        }, 
-        */
+          type: 'doc',
+          docId: 'page',
+          position: 'right',
+          label: 'About',
+        },
+        {
+          type: 'doc',
+          docId: 'page',
+          position: 'right',
+          label: 'Services',
+        },
+        {
+          type: 'doc',
+          docId: 'page',
+          position: 'right',
+          label: 'Get a Quote!',
+        },
+        
           /*
            {
             label: 'Support',
@@ -171,7 +184,7 @@ const config = {
       footer: {
         style: "dark",
 
-        copyright: `© ${new Date().getFullYear()} Dialogix Studio`,
+        copyright: `© ${new Date().getFullYear()} Leafline Garden Design LLC`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -8,22 +8,18 @@ import HomepageFeatures from "@site/src/components/Homepage";
 import styles from "./index.module.css";
 
 import { Col, Divider, Row, Card, Space, Button, ConfigProvider } from "antd";
-const style = {
-  color: "#fff",
-  margin: "30px 40px 10px -50px",
-  fontSize: "96px",
-};
+
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className={clsx("hero", styles.heroBanner)}>
+    <header className={clsx("hero", styles.heroBanner)}>
           <div className={clsx("col", styles.heroBackground)}>
         <h1>Landscape Design,<br />Installation, and<br />Maintenance</h1>
-        
+        <Button>Request a Free Consultation!</Button>
 
     </div>
-    </div>
+    </header>
   );
 }
 
