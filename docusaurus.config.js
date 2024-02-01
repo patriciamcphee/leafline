@@ -34,7 +34,7 @@ const config = {
 
   title: "Dialogix Studio",
   tagline: "Crafting Bot Conversations, Empowering Users",
-  url: "https://patriciamcphee.github.io",
+  url: "https://leaflinegarden.design",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

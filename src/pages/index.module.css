@@ -4,11 +4,28 @@
  */
 
 .heroBanner {
-  padding: 0;
-  text-align: left;
-  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../../static/img/hero-1.jpg");
   overflow: hidden;
+  background-position: 10% 49%; 
+  background-size: 200%;
+  filter: brightness(50%);
+  filter: contrast(80%);
+}
 
+.heroBanner h1 {
+  font-size: 98px;
+  color: #6B4423;
+  text-align: center;
+  padding: 0.5em;
+
+}
+
+.heroBackground {
+  margin: 1em 2em;
+  background-color: white;
+  opacity: 85%;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 996px) {

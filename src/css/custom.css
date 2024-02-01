@@ -844,25 +844,27 @@ div[class^="tocCollapsibleContent"] ul li {
 
 
 .intro-visual {
-  padding: 3em 4em 4em 4em;
+  padding: 4em;
   margin: 0;
 
   border-radius: 0px;
   background-repeat: no-repeat;
+    /*
   background-color: var(--ifm-color-primary-lightest);
-  /*
-  background-image: url("../../static/img/dialogix-studio-hero-4.svg");
+
+  background-image: url("../../static/img/hero-1.jpg");
   overflow: visible;
   background-position: 93% 50%; 
   background-size: 40%;
   */
-  display:flex;
+
   color: white;
 }
 
 .intro-visual h1 {
   margin-top: 20px;
   line-height: 150%;
+  font-size: 112pt;
 }
 
 [data-theme='dark'] .intro-visual {
