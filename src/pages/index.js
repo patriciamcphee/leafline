@@ -60,10 +60,11 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
+      <Services />
+        <Divider /> 
         <WhoWeAre />
         <Divider />
-        <Services />
-        <Divider />        
+       
         <ContactUs />
       </main>
     </Layout>

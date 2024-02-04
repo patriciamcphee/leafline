@@ -7,8 +7,10 @@
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .featureHeading {
@@ -22,7 +24,7 @@ font-weight: 400;
   align-items: center;
   padding: 2em 0 0 0;
   margin: 2em 0;
-  width: 100%;
+
 }
 
 
@@ -50,7 +52,8 @@ padding: 2px 0;
   font-size: 20px;
   text-align: center;
   line-height: 150%;
-  padding: 0.5em;
+  padding: 0 0 1em 0;
+
 }
 
 /* src/App.css */
