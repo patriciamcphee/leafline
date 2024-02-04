@@ -1,8 +1,9 @@
 .features {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  padding: 2em 0 0 0;
+  margin: 2em 0;
+  width: 100%;
 }
 
 .featureSvg {
@@ -12,25 +13,34 @@
 
 .featureHeading {
   text-align: center;
-  font-size: 46px;
+  font-size: 40px;
 font-weight: 400;
 }
 
+.services {
+  display: flex;
+  align-items: center;
+  padding: 2em 0 0 0;
+  margin: 2em 0;
+  width: 100%;
+}
+
+
 .serviceHeadingBackground {
   background-color: #6b4423;
-  padding: 10px 0 1px 0;
+  padding: 10px 0 0px 0;
 }
 
 .serviceHeading {
   text-align: center;
   font-size: 28px;
 font-weight: 400;
-color: white;
-padding: 3px 0;
+letter-spacing: -1.25px;
+padding: 2px 0;
 }
 
 .featureBody {
-  font-size: 26px;
+  font-size: 20px;
   text-align: center;
   line-height: 150%;
   margin: 1em 0;
@@ -40,7 +50,7 @@ padding: 3px 0;
   font-size: 20px;
   text-align: center;
   line-height: 150%;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 /* src/App.css */

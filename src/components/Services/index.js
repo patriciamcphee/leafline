@@ -24,7 +24,7 @@ const ServiceList = [
   },
   {
     id: 4,
-    title: 'Mulching and Woodchip Spreading',
+    title: 'Mulching/Woodchip Spreading',
     description: 'Beyond aesthetics, our mulching services are pivotal for soil health and plant vitality, providing a polished look that breathes life into your garden.',
     image: '', // Placeholder image path
   },
@@ -45,13 +45,17 @@ const ServiceList = [
 
 export default function Services() {
   return (
+    <section className={styles.features}>
     <div className="container">
       <h1 className={styles.featureHeading}>Our Services</h1>
       <p className={styles.featureBody}>Understanding that each garden has its own soul and each homeowner‘s vision, we offer a suite of flexible services tailored to meet our clients’ unique needs and desires. Our offerings include:</p>
+      <div className="text--center padding-horiz--md">
       {ServiceList.map((service, index) => (
         <ServiceCard key={index} title={service.title} description={service.description}></ServiceCard>
       ))}
+      </div>
     </div>
+    </section>
   );
 };
 
