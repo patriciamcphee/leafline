@@ -33,7 +33,7 @@ const config = {
   ],
 
   title: "Leafline Garden Design LLC",
-  tagline: "Crafting Bot Conversations, Empowering Users",
+  tagline: "Your garden is a canvas, and our goal is to help you create a masterpiece that reflects your style while respecting and enhancing the natural environment. Let's create something beautiful together!",
   url: "https://leaflinegarden.design",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -182,8 +182,12 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        
+        logo: {
+          alt: "LeafLine Garden Design LLC",
+          src: "img/logo-white-full.png",
 
+        },
         copyright: `© ${new Date().getFullYear()} Leafline Garden Design LLC`,
       },
       prism: {

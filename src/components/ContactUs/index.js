@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Landscape Design",
+    title: "Why Choose Us",
 //    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
@@ -12,29 +12,13 @@ const FeatureList = [
       </>
     ),
   },
-  {
-    title: "Build & Installation",
-//    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: (
-      <>
-        Each project is a new adventure for us. With the heart of an Artisanal Craftsperson, we pour dedication and careful thought into our work. It's not just designing but also connecting, understanding, and narrating.
-      </>
-    ),
-  },
-  {
-    title: "Landscape Care",
-//    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        Our passion is to bring worlds closer. Recognizing the fine balance between technological precision and human warmth, we hope to serve as a modest bridge, making every digital conversation feel just a bit more human.
-      </>
-    ),
-  },
+
+
 ];
 
 function Feature({ title, description }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx("col")}>
       <div className="text--center">
         
       </div>
@@ -46,7 +30,7 @@ function Feature({ title, description }) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function HomepageContact() {
   return (
     <section className={styles.features}>
       
