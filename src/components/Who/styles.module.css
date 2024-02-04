@@ -1,7 +1,8 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2em 0;
+  margin: 3em 0;
   width: 100%;
 }
 
@@ -12,9 +13,13 @@
 
 .featureHeading {
   text-align: center;
+  font-size: 46px;
+font-weight: 400;
 }
 
 .featureBody {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
+  line-height: 150%;
+  margin: 1em 0;
 }

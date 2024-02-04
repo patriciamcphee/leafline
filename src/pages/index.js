@@ -3,9 +3,9 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/Homepage";
-import HomepageAbout from "@site/src/components/About";
-import ContactUs from "@site/src/components/ContactForm/ContactUs.js";
+import WhoWeAre from "@site/src/components/Who";
+import ContactUs from "@site/src/components/ContactUs";
+import Services from '@site/src/components/Services';
 
 import styles from "./index.module.css";
 
@@ -20,7 +20,7 @@ const style = {
 };
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+
   return (
     <header className={clsx("hero", styles.heroBanner)}>
           <div className={clsx("col", styles.heroBackground)}>
@@ -39,7 +39,7 @@ function HomepageHeader() {
                   }
                 }
               >
-                <Button type="primary" shape="round" size='large' style={style} href="/writing-samples">
+                <Button type="primary" shape="round" size='large' style={style} href="#">
                 Request a Consultation!
                 </Button>
               </ConfigProvider>
@@ -60,11 +60,10 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-      
-        <HomepageFeatures />
+        <WhoWeAre />
         <Divider />
-        <HomepageAbout />
-        <Divider />
+        <Services />
+        <Divider />        
         <ContactUs />
       </main>
     </Layout>

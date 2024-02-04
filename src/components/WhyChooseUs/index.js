@@ -9,6 +9,17 @@ const FeatureList = [
     description: (
       <>
         We like to think of ourselves as lifelong students. With the spirit of an Innovative Thinker, we're always looking for ways to better understand and improve chatbot experiences, blending human conversation's nuances with AI's wonders.
+        <p>
+          <ul>
+            <li><b>Free Consultation</b></li>
+            <li><b>Content & Writing Mastery</b></li>
+            <li><b>Simplifying the Complex</b></li>
+            <li><b>Tailored Collaboration</b></li>
+          </ul>
+        </p>
+        <br />
+        <h2>Worried about costs?</h2>
+        <p>I understand that budgeting is crucial. Rest assured, after our free consultation, you'll have a clear picture of service costs, ensuring no surprises down the road.</p>
       </>
     ),
   },
@@ -30,7 +41,7 @@ function Feature({ title, description }) {
   );
 }
 
-export default function ContactUs() {
+export default function HomepageAbout() {
   return (
     <section className={styles.features}>
       

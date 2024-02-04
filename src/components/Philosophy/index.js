@@ -4,37 +4,32 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Landscape Design",
+    title: "Why Choose Us",
 //    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
         We like to think of ourselves as lifelong students. With the spirit of an Innovative Thinker, we're always looking for ways to better understand and improve chatbot experiences, blending human conversation's nuances with AI's wonders.
+        <p>
+          <ul>
+            <li><b>Free Consultation</b></li>
+            <li><b>Content & Writing Mastery</b></li>
+            <li><b>Simplifying the Complex</b></li>
+            <li><b>Tailored Collaboration</b></li>
+          </ul>
+        </p>
+        <br />
+        <h2>Worried about costs?</h2>
+        <p>I understand that budgeting is crucial. Rest assured, after our free consultation, you'll have a clear picture of service costs, ensuring no surprises down the road.</p>
       </>
     ),
   },
-  {
-    title: "Build & Installation",
-//    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: (
-      <>
-        Each project is a new adventure for us. With the heart of an Artisanal Craftsperson, we pour dedication and careful thought into our work. It's not just designing but also connecting, understanding, and narrating.
-      </>
-    ),
-  },
-  {
-    title: "Landscape Care",
-//    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        Our passion is to bring worlds closer. Recognizing the fine balance between technological precision and human warmth, we hope to serve as a modest bridge, making every digital conversation feel just a bit more human.
-      </>
-    ),
-  },
+
+
 ];
 
 function Feature({ title, description }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx("col")}>
       <div className="text--center">
         
       </div>
@@ -46,7 +41,7 @@ function Feature({ title, description }) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function HomepageAbout() {
   return (
     <section className={styles.features}>
       
