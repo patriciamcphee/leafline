@@ -9,3 +9,12 @@
   height: 200px;
   width: 200px;
 }
+
+.featureHeading {
+  text-align: center;
+}
+
+.featureBody {
+  font-size: 20px;
+  text-align: center;
+}

@@ -39,7 +39,7 @@ function NavbarContentLayout({left, right}) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
-      <div className="navbar__items navbar__items--right">{right}</div>
+      <div className="navbar__items navbar__items--right padding-top--lg">{right}</div>
     </div>
   );
 }
@@ -62,7 +62,7 @@ export default function NavbarContent() {
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible
         <>
-          <NavbarItems items={rightItems} />
+          <NavbarItems className={styles.bottom} items={rightItems} />
           {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />

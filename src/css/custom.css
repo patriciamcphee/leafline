@@ -3,18 +3,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap);
 
+/* Leafline fonts */
+
+@import url(https://fonts.googleapis.com/css2?family=Doppio+One&display=swap);
 
 
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #004a63;
-  --ifm-color-primary-dark: #004359;
-  --ifm-color-primary-darker: #003f54;
-  --ifm-color-primary-darkest: #003445;
-  --ifm-color-primary-light: #00516d;
-  --ifm-color-primary-lighter: #005572;
-  --ifm-color-primary-lightest: #006081;
+  --ifm-color-primary: #286655;
+  --ifm-color-primary-dark: #245c4c;
+  --ifm-color-primary-darker: #225748;
+  --ifm-color-primary-darkest: #1c473b;
+  --ifm-color-primary-light: #2c705d;
+  --ifm-color-primary-lighter: #2e7562;
+  --ifm-color-primary-lightest: #34856e;
   --ifm-color-background: #CDCDCD;
   --ifm-color-background-dark: #999999;
   --ifm-color-background-darker: #909090;
@@ -23,13 +26,13 @@
   --ifm-color-background-lighter: #c3c3c3;
   --ifm-color-background-lightest: #dddddd;
   --ifm-code-font-size: 95%;
-  --ifm-color-secondary: #35bddb;
-  --ifm-color-secondary-dark: #25b1d0;
-  --ifm-color-secondary-darker: #23a7c4;
-  --ifm-color-secondary-darkest: #1d8aa2;
-  --ifm-color-secondary-light: #4cc5df;
-  --ifm-color-secondary-lighter: #58c8e1;
-  --ifm-color-secondary-lightest: #7ad4e7;
+  --ifm-color-secondary: #6b4423;
+  --ifm-color-secondary-dark: #603d20;
+  --ifm-color-secondary-darker: #5b3a1e;
+  --ifm-color-secondary-darkest: #4b3018;
+  --ifm-color-secondary-light: #764b27;
+  --ifm-color-secondary-lighter: #7b4e28;
+  --ifm-color-secondary-lightest: #8b582e;
   --ifm-color-content: rgba(7, 0, 20, 0.87);
   --ifm-color-content-secondary: rgba(7, 0, 20, 0.6);
   --ifm-border-color: rgba(7, 0, 19, 0.12);  
@@ -44,7 +47,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-leading-desktop: 1;
 
-  --ifm-navbar-height: 56px;
+  --ifm-navbar-height: 114px;
   --ifm-navbar-background-color: var(--ifm-background-color);
   --ifm-navbar-shadow: none;
 
@@ -96,13 +99,13 @@ body {
 h1 {
   padding-top: 0;
   text-align: left;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 500;
+  font-family: 'Doppio One', sans-serif;
+  font-weight: 400;
 }
 
 h2, h3, h4 {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 600;
+  font-family: 'Doppio One', sans-serif;
+  font-weight: 400;
 }
 
 h4 {
@@ -147,7 +150,7 @@ h5,
 h6 {
 
   letter-spacing: -0.01em;
-  font-weight: 600;
+  font-weight: 400;
 }
 :is(h1, h2, h3, h4, h5, h6) code {
   font-size: 0.9em;
@@ -190,8 +193,6 @@ h6 {
 font-weight: 600;
 
 }
-
-
 
 
 .no-padding {
@@ -349,10 +350,12 @@ img.diagrams {
 .navbar__logo,
 .navbar__logo img,
 a[class^="sidebarLogo"] img {
-  height: 39px;
+  height: 96px;
 }
 .navbar__link {
   text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
 }
 /* :not(.navbar__icon-link) + .navbar__icon-link {
   margin-left: calc(var(--ifm-navbar-item-padding-horizontal) * 0.5);
@@ -445,6 +448,7 @@ aside.theme-doc-sidebar-container {
 }
 nav[class^="menu"] {
   padding: 0.5rem;
+
 }
 .menu .menu__link--sublist {
   margin-bottom: 0;
@@ -841,25 +845,27 @@ div[class^="tocCollapsibleContent"] ul li {
 
 
 .intro-visual {
-  padding: 3em 4em 4em 4em;
+  padding: 4em;
   margin: 0;
 
   border-radius: 0px;
   background-repeat: no-repeat;
+    /*
   background-color: var(--ifm-color-primary-lightest);
-  /*
-  background-image: url("../../static/img/dialogix-studio-hero-4.svg");
+
+  background-image: url("../../static/img/hero-1.jpg");
   overflow: visible;
   background-position: 93% 50%; 
   background-size: 40%;
   */
-  display:flex;
+
   color: white;
 }
 
 .intro-visual h1 {
-  margin-top: -50px;
-
+  margin-top: 20px;
+  line-height: 150%;
+  font-size: 112pt;
 }
 
 [data-theme='dark'] .intro-visual {
@@ -884,7 +890,7 @@ div[class^="tocCollapsibleContent"] ul li {
 
 
 .intro-text p {
-  font-size: 24px;
+  font-size: 36px;
   line-height: 1.4;
   margin: 16px 0;
 
@@ -918,11 +924,12 @@ div[class^="tocCollapsibleContent"] ul li {
 */
 .intro-visual h1 {
   font-size: 72px;
-  color: #A4D71C;
+  color: white;
   margin: 1rem 0;
-  padding: 12px 0;
+  padding: 20px 0;
 /*  letter-spacing: -0.04em; */
-  line-height: 72px;
+  line-height: 120%;
+  text-align: center;
 
 }
 

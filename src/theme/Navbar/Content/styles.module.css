@@ -6,3 +6,10 @@ Hide color mode toggle in small viewports
     display: none;
   }
 }
+
+
+
+#bottom{
+
+  position: absolute; bottom: 0px; 
+}

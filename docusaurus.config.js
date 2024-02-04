@@ -32,9 +32,9 @@ const config = {
     "docusaurus-theme-redoc",
   ],
 
-  title: "Dialogix Studio",
-  tagline: "Crafting Bot Conversations, Empowering Users",
-  url: "https://patriciamcphee.github.io",
+  title: "Leafline Garden Design LLC",
+  tagline: "Your garden is a canvas, and our goal is to help you create a masterpiece that reflects your style while respecting and enhancing the natural environment. Let's create something beautiful together!",
+  url: "https://leaflinegarden.design",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -63,7 +63,7 @@ const config = {
         docs: {
           sidebarCollapsed: true,
           breadcrumbs: false,
-          sidebarPath: require.resolve("./sidebars.js"),
+         // sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
           showLastUpdateTime: true,
           //          editUrl:
@@ -116,7 +116,7 @@ const config = {
         title: "",
         logo: {
           alt: "",
-          src: "img/dialogix-studio-logo-2x.png",
+          src: "img/final-logo.png",
         },
         items: [
           /*         { 
@@ -124,19 +124,32 @@ const config = {
           label: "API", 
           position: "left" 
         },
-
+*/
         {
           type: 'doc',
-          docId: 'resume',
+          docId: 'page',
           position: 'right',
-          label: 'Resume',
+          label: 'Home',
         },
         {
-          to: '/blog', 
-          label: 'Blog', 
-          position: 'right'
-        }, 
-        */
+          type: 'doc',
+          docId: 'page',
+          position: 'right',
+          label: 'About',
+        },
+        {
+          type: 'doc',
+          docId: 'page',
+          position: 'right',
+          label: 'Services',
+        },
+        {
+          type: 'doc',
+          docId: 'page',
+          position: 'right',
+          label: 'Get a Quote!',
+        },
+        
           /*
            {
             label: 'Support',
@@ -169,9 +182,13 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        
+        logo: {
+          alt: "LeafLine Garden Design LLC",
+          src: "img/logo-white-full.png",
 
-        copyright: `© ${new Date().getFullYear()} Dialogix Studio`,
+        },
+        copyright: `© ${new Date().getFullYear()} Leafline Garden Design LLC`,
       },
       prism: {
         theme: lightCodeTheme,
