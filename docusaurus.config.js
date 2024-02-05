@@ -135,13 +135,13 @@ const config = {
 					href: '#about',
 					label: 'About', position: 'right'
 				},
-
+*/
         {
           type: 'doc',
           docId: 'page',
           position: 'right',
-          label: 'Services',
-        },*/
+          label: '(206) 880-0886',
+        },
         {
 					href: 'https://form.jotform.com/240356312632044',
 					label: 'Get a Quote!', position: 'right'

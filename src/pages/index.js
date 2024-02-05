@@ -40,7 +40,7 @@ function HomepageHeader() {
                   }
                 }
               >
-                <Button type="primary" shape="round" size='large' style={style} href="https://form.jotform.com/240356312632044">
+                <Button type="primary" shape="round" size='large' style={style} href="https://form.jotform.com/240356312632044" target="_blank">
                 Request a Consultation!
                 </Button>
               </ConfigProvider>
