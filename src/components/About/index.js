@@ -19,7 +19,7 @@ const About = () => {
     <div class="col">
       <div class="col-demo padding--md"><p className={styles.featureBodyLeft}>Choose <b>Leafline Garden Design</b> for:</p>
       <ul>
-        <li><b>Expertise & Experience</b>: Led by a passionate horticulture graduate with over 5 years of experience, we have extensive knowledge and dedication to horticulture.</li>
+        <li><b>Expertise & Experience</b>: Led by a passionate Lake Washington Tech Horticulture graduate with over 5 years of experience, we have extensive knowledge and dedication to horticulture.</li>
         <li><b>Sustainable Design</b>: Our projects utilize native and native-like plants to support local ecosystems and promote biodiversity.</li>
         <li><b>Unique Aesthetic Fusion</b>: Our designs blend the elegance of Japanese gardens with the essence of the Pacific Northwest, creating tranquil retreats that are thriving ecosystems full of life. </li>
         <li><b>Ecosystem Focus</b>: We design gardens that foster symbiotic relationships within the soil and its inhabitants, benefiting native wildlife and plant health.</li>
