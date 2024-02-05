@@ -4,7 +4,8 @@ import ServiceCard from './ServiceCard';
 import styles from "./styles.module.css";
 import { Button, Card, Flex, Typography, Space, Row, Col } from 'antd';
 
-const ServiceList = [
+const Services = () => {
+  const services = [
   {
     id: 1,
     title: 'Custom Landscape Design',
@@ -45,24 +46,23 @@ const ServiceList = [
 ];
 
 
-export default function Services() {
   return (
     <section className={styles.features}>
     <div className="container">
       <h1 className={styles.featureHeading}>Our Services</h1>
       <p className={styles.featureBody}>Understanding that each garden has its own soul and each homeowner‘s vision, we offer a suite of flexible services tailored to meet our clients’ unique needs and desires. Our offerings include:</p>
-      
-      <Space direction="horizontal">
-      <Row justify="space-evenly">
-      <Col className="gutter-row">
-      {ServiceList.map((service, index) => (
-        <ServiceCard key={index} image={service.image} title={service.title} description={service.description}></ServiceCard>
+
+      <div className={styles.servicesContainer}>
+      {services.map(service => (
+        <ServiceCard key={service.id} title={service.title} description={service.description} />
       ))}
-        </Col>
-      </Row>
-      </Space>
     </div>
+    </div>
+
+
     </section>
   );
 };
+
+export default Services
 

@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.featureSvgBlock {
+
+}
+
 .featureSvg {
   display: block;
   margin-left: auto;
@@ -56,110 +60,31 @@ padding: 2px 0;
 
 }
 
-/* src/App.css */
-.servicesContainer {
-  text-align: center;
+/* styles.css */
+.serviceCard {
+  border: 1px solid #cecece;
+  border-radius: 10px;
   padding: 20px;
-  border: 1px solid #dedede;
+  margin: 10px;
+  flex-basis: calc(33.333% - 20px);
+  box-sizing: border-box;
 }
 
-.servicesGrid {
+/* Responsive layout with 3 cards per row */
+@media (max-width: 768px) {
+  .serviceCard {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceCard {
+    flex-basis: 100%;
+  }
+}
+
+.servicesContainer {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-}
-
-.service-card {
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 300px;
-}
-
-.service-card:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.service-card img {
-  width: 100%;
-  height: 200px;
-}
-
-.service-card h3 {
-  margin: 10px 0;
-}
-
-.service-card p {
-  color: grey;
-  padding: 0 20px 20px;
-}
-
-
-.introCards {
-  margin-top: 20px;
-
-  padding: 10px 0;
-
-}
-
-.index-container {
-  padding: 15px 40px;
-
-
-}
-
-.sdk-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 36px;
-  margin: 20px 0;
-}
-
-.sdk-cards-content-page {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 24px;
-  margin: 20px 0;
-}
-
-
-
-.other-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 36px;
-}
-
-.introCard {
-
-
-}
-
-.introCard h3 {
-  color: var(--ifm-color-primary-lightest);
-  font-size: 24px;
-  line-height: 30px;
-  margin-bottom: 8px;
-}
-
-.introCard img {
-  border: none;
-  max-width: 48px;
-  max-height: 48px;
-}
-
-.introCard h3 a:hover {
-  text-decoration: none;
-
-}
-
-.introCard a:hover {
-  text-decoration: none;
-
-}
-
-.introCard p {
-  font-size: 0.5rem;
-  line-height: 1.4rem;
-  color: #434e4e;
+  justify-content: space-around;
 }
