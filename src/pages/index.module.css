@@ -53,7 +53,19 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
   /* Styles for tablets in landscape orientation */
+
+
 }
+
+@media only screen and (min-width: 268px) and (max-width: 480px) {
+  /* Styles for viewports with a maximum height of 700px */
+
+  .heroBanner {
+    padding: 0rem;
+    height: 200px; /* Fixed height; adjust as needed */
+  }
+}
+
 
 
 @media screen and (max-width: 996px) {
@@ -63,7 +75,7 @@
   }
   .heroBanner h1 {
     padding: 0.7em 0 0 0;
-    font-size: 56px;
+    font-size: 48px;
   
   }
 
