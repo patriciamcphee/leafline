@@ -19,4 +19,26 @@
 .featureBody {
   font-size: 20px;
   text-align: center;
+  line-height: 150%;
+  margin: 1em 0;
+}
+
+.featureBodyLeft {
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
+  margin: 1.2em 0;
+}
+
+.featureBodyLeft ul, li {
+  font-size: 18px;
+  text-align: left;
+  line-height: 150%;
+  margin: 0em 0;
+}
+
+.contactHeading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
 }

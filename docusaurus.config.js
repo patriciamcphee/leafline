@@ -124,7 +124,7 @@ const config = {
           label: "API", 
           position: "left" 
         },
-*/
+
         {
           type: 'doc',
           docId: 'page',
@@ -132,23 +132,20 @@ const config = {
           label: 'Home',
         },
         {
-          type: 'doc',
-          docId: 'page',
-          position: 'right',
-          label: 'About',
-        },
+					href: '#about',
+					label: 'About', position: 'right'
+				},
+
         {
           type: 'doc',
           docId: 'page',
           position: 'right',
           label: 'Services',
-        },
+        },*/
         {
-          type: 'doc',
-          docId: 'page',
-          position: 'right',
-          label: 'Get a Quote!',
-        },
+					href: 'https://form.jotform.com/240356312632044',
+					label: 'Get a Quote!', position: 'right'
+				},
         
           /*
            {

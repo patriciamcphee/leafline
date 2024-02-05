@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import About from "@site/src/components/About";
 import ContactUs from "@site/src/components/ContactUs";
 import Services from '@site/src/components/Services';
+import SurveyForm from '@site/src/components/ClientSurvey';
 
 import styles from "./index.module.css";
 
@@ -39,7 +40,7 @@ function HomepageHeader() {
                   }
                 }
               >
-                <Button type="primary" shape="round" size='large' style={style} href="#">
+                <Button type="primary" shape="round" size='large' style={style} href="https://form.jotform.com/240356312632044">
                 Request a Consultation!
                 </Button>
               </ConfigProvider>
@@ -60,11 +61,13 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-      
+        <a name="about"></a>
         <About />
         <Divider />
+        <a name="services"></a>
         <Services />
         <Divider /> 
+        <a name="contactUs"></a>
         <ContactUs />
       </main>
     </Layout>
