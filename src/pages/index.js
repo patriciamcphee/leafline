@@ -32,7 +32,7 @@ function HomepageHeader() {
               
                 theme={{
                   token: {
-                      colorPrimary: '#6B4423',
+                      colorPrimary: '#4b3018',
                       colorPrimaryHover: '#A2C523',
                       borderShadow: '0 4px 0 #286655',
                     }
