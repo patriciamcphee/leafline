@@ -25,6 +25,7 @@ function Feature({ title, description }) {
       <div className="text--center padding-horiz--md">
         <h1 className={styles.featureHeading}>{title}</h1>
         <p className={styles.featureBody}>{description}</p>
+        <p className={styles.featureBody}>Embrace the journey to your personal Eden with Leafline Garden Design. Together, let's create something beautiful.</p>
       </div>
     </div>
   );

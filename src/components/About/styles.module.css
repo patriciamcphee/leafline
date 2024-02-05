@@ -1,21 +1,77 @@
 .features {
   display: flex;
+  justify-content: space-between;
+  /*align-items: flex-start;  Adjust if you want the columns to align differently */
   align-items: center;
-  padding: 2em 0;
+  padding: 2em 0 0 0;
   margin: 3em 0;
   width: 100%;
 }
+
 .featureSvg {
   height: 200px;
   width: 200px;
 }
 
-.featureHeading {
+.aboutHeading {
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .featureBody {
   font-size: 20px;
   text-align: center;
+  line-height: 150%;
+  margin: 1em 0;
+}
+
+.featureBodyLeft {
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
+  margin: 1.2em 0;
+}
+
+.featureBodyLeft ul, li {
+  font-size: 18px;
+  text-align: left;
+  line-height: 150%;
+  margin: 0.5em 0;
+}
+
+
+ul {
+  list-style-image: url('@site/static/img/favicon-24x24.png');
+  margin-top: -18px;
+}
+
+/* styles.css */
+/* TwoColumnLayout.css */
+.container {
+  display: flex;
+  flex-direction: column; /* Ensures the heading and columns stack vertically */
+}
+
+.heading {
+  margin-bottom: 20px; /* Adds space between the heading and the columns */
+  /* Style your heading here (font size, color, etc.) */
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the gap between columns as needed */
+}
+
+.column {
+  flex: 1; /* Makes the columns fill up the container evenly */
+  /* Optional: Add padding or margins here for spacing inside the columns */
+}
+
+/* Responsive design: Stack columns on smaller screens */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
 }

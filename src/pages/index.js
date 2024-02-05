@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import WhoWeAre from "@site/src/components/Who";
+import About from "@site/src/components/About";
 import ContactUs from "@site/src/components/ContactUs";
 import Services from '@site/src/components/Services';
 
@@ -60,11 +60,11 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-      <Services />
-        <Divider /> 
-        <WhoWeAre />
+      
+        <About />
         <Divider />
-       
+        <Services />
+        <Divider /> 
         <ContactUs />
       </main>
     </Layout>

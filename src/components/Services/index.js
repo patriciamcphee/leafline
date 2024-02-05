@@ -56,7 +56,7 @@ const Services = () => {
     <section className={styles.features}>
     <div className="container">
       <h1 className={styles.featureHeading}>Our Services</h1>
-      <p className={styles.featureBody}>Understanding that each garden has its own soul and each homeowner‘s vision, we offer a suite of flexible services tailored to meet our clients’ unique needs and desires. Our offerings include:</p>
+      <p className={styles.featureBody}>Understanding that each garden has its own soul and each homeowner‘s vision, we offer a suite of flexible services tailored to meet our clients’ unique needs and desires.</p>
 
       <div className={styles.servicesContainer}>
       {services.map(service => (

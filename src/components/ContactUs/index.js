@@ -8,7 +8,8 @@ const FeatureList = [
 //    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
-        We like to think of ourselves as lifelong students. With the spirit of an Innovative Thinker, we're always looking for ways to better understand and improve chatbot experiences, blending human conversation's nuances with AI's wonders.
+        At the helm of Leafline Garden Design is a passionate Lake Washington Tech Horticulture graduate with over 5 years of hands-on experience in landscape maintenance and design. This solid foundation of knowledge and experience ensures that your garden is not just designed but crafted with expertise that only comes from a dedication to the art and science of horticulture.
+        <p className={styles.featureBodyLeft}>Partner with Leafline Garden Design to transform your garden into a sustainable sanctuary that reflects your personal style and positively contributes to the ecosystem. Your garden becomes more than just a space—it becomes a statement.</p>
       </>
     ),
   },

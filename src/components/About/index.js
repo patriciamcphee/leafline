@@ -2,56 +2,33 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
-const FeatureList = [
-  {
-    title: "Why Choose Us",
-//    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: (
-      <>
-        We like to think of ourselves as lifelong students. With the spirit of an Innovative Thinker, we're always looking for ways to better understand and improve chatbot experiences, blending human conversation's nuances with AI's wonders.
-        <p>
-          <ul>
-            <li><b>Free Consultation</b></li>
-            <li><b>Content & Writing Mastery</b></li>
-            <li><b>Simplifying the Complex</b></li>
-            <li><b>Tailored Collaboration</b></li>
-          </ul>
-        </p>
-        <br />
-        <h2>Worried about costs?</h2>
-        <p>I understand that budgeting is crucial. Rest assured, after our free consultation, you'll have a clear picture of service costs, ensuring no surprises down the road.</p>
-      </>
-    ),
-  },
-
-
-];
-
-function Feature({ title, description }) {
-  return (
-    <div className={clsx("col")}>
-      <div className="text--center">
-        
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h1 className={styles.featureHeading}>{title}</h1>
-        <p className={styles.featureBody}>{description}</p>
-      </div>
-    </div>
-  );
-}
-
-export default function HomepageAbout() {
+const About = () => {
   return (
     <section className={styles.features}>
       
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+<div class="container">
+<h1 className={styles.aboutHeading}>Crafting Your Personal Eden in Seattle</h1>
+  <div class="row">
+    <div class="col col--5">
+      <div class="col-demo padding--md"><p className={styles.featureBodyLeft}>At Leafline Garden Design, we believe your garden should be a personal sanctuary, a canvas for your creativity, and an essential extension of your home. Our boutique landscaping service turns your garden dreams into reality with precision, care, and natural magic.</p>
+        <p className={styles.featureBodyLeft}>We are landscapers and dream weavers dedicated to transforming your outdoor space into a unique masterpiece that enhances your home and life. With a focus on quality, sustainability, and beauty, we collaborate with you to create a visually stunning garden that reflects your style.</p>
         </div>
+    </div>
+    <div class="col">
+      <div class="col-demo padding--md"><p className={styles.featureBodyLeft}>Choose Leafline Garden Design for:</p>
+      <ul>
+        <li><b>Expertise & Experience</b>: Led by a passionate horticulture graduate with over 5 years of experience, we have extensive knowledge and dedication to horticulture.</li>
+        <li><b>Sustainable Design</b>: Our projects utilize native and native-like plants to support local ecosystems and promote biodiversity.</li>
+        <li><b>Unique Aesthetic Fusion</b>: Our designs blend the elegance of Japanese gardens with the essence of the Pacific Northwest, creating tranquil retreats that are thriving ecosystems full of life. </li>
+        <li><b>Ecosystem Focus</b>: We design gardens that foster symbiotic relationships within the soil and its inhabitants, benefiting native wildlife and plant health.</li>
+        <li><b>Personalized Service</b>:We offer tailored services that honor your dreams, with a flexible approach to bring your ideal garden to life.</li>
+      </ul>
       </div>
+    </div>    
+  </div>
+</div>
     </section>
   );
-}
+};
+
+export default About;
