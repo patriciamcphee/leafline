@@ -23,7 +23,7 @@ function LetsConnect() {
 <p className={styles.featureBody}>
       <button
         onClick={() => window.location.href = 'https://form.jotform.com/240356312632044'}
-        style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer', backgroundColor: '#286655', color: 'white', border: 'none', borderRadius: '16px' }}
+        style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer', backgroundColor: '#286655', color: 'white', border: 'none', borderRadius: '20px' }}
       >
         Request a Consultation!
       </button>

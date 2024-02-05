@@ -185,7 +185,7 @@ const config = {
           src: "img/logo-white-full.png",
 
         },
-        copyright: `© ${new Date().getFullYear()} Leafline Garden Design LLC`,
+        copyright: `© ${new Date().getFullYear()} Leafline Garden Design LLC     •     (206) 880-0886`,
       },
       prism: {
         theme: lightCodeTheme,
