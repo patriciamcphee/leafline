@@ -61,14 +61,34 @@ padding: 2px 0;
 }
 
 /* styles.css */
+
 .serviceCard {
   border: 1px solid #cecece;
+  border-bottom: 6px solid #6B4423; /* Bottom border */
   border-radius: 10px;
-  padding: 20px;
   margin: 10px;
   flex-basis: calc(33.333% - 20px);
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Ensures the child elements (including the image) stretch to fill the container */
+  text-align: center;
+  overflow: hidden; /* Ensures nothing spills outside the border-radius */
 }
+
+.serviceImage {
+  width: 100%; /* Makes the image responsive */
+  height: 200px; /* Restricts the height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 10px 10px 0 0; /* Rounds the top corners to match the card */
+  margin: -1px; /* Adjust if there's a slight misalignment due to the border */
+}
+
+.serviceContent {
+  padding: 20px; /* Applies padding only to the content, not the image */
+}
+
+
 
 /* Responsive layout with 3 cards per row */
 @media (max-width: 768px) {
