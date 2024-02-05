@@ -54,7 +54,7 @@ const Services = () => {
 
       <div className={styles.servicesContainer}>
       {services.map(service => (
-        <ServiceCard key={service.id} title={service.title} description={service.description} />
+        <ServiceCard key={service.id}  image={service.image} title={service.title} description={service.description} />
       ))}
     </div>
     </div>
