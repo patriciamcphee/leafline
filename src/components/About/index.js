@@ -10,12 +10,14 @@ const About = () => {
 <h1 className={styles.aboutHeading}>Crafting Your Personal Eden in Seattle</h1>
   <div class="row">
     <div class="col col--5">
-      <div class="col-demo padding--md"><p className={styles.featureBodyLeft}>At Leafline Garden Design, we believe your garden should be a personal sanctuary, a canvas for your creativity, and an essential extension of your home. Our boutique landscaping service turns your garden dreams into reality with precision, care, and natural magic.</p>
-        <p className={styles.featureBodyLeft}>We are landscapers and dream weavers dedicated to transforming your outdoor space into a unique masterpiece that enhances your home and life. With a focus on quality, sustainability, and beauty, we collaborate with you to create a visually stunning garden that reflects your style.</p>
+      <div class="col-demo padding--md"><p className={styles.featureBodyLeft}>Led by a passionate horticulture expert from Lake Washington Tech with 5+ years in the field, <b>Leafline Garden Design</b> crafts your garden with precision and horticultural expertise.</p>
+        <p className={styles.featureBodyLeft}>Our service transforms your garden into a personal haven, blending creativity with nature to realize your vision.</p>
+        <p className={styles.featureBodyLeft}>We turn outdoor spaces into unique masterpieces, focusing on quality, sustainability, and your style, enhancing both home and life.</p>
+        <p className={styles.featureBody}><b>Partner with us because your garden is more than just a space—it's a statement.</b></p>
         </div>
     </div>
     <div class="col">
-      <div class="col-demo padding--md"><p className={styles.featureBodyLeft}>Choose Leafline Garden Design for:</p>
+      <div class="col-demo padding--md"><p className={styles.featureBodyLeft}>Choose <b>Leafline Garden Design</b> for:</p>
       <ul>
         <li><b>Expertise & Experience</b>: Led by a passionate horticulture graduate with over 5 years of experience, we have extensive knowledge and dedication to horticulture.</li>
         <li><b>Sustainable Design</b>: Our projects utilize native and native-like plants to support local ecosystems and promote biodiversity.</li>
