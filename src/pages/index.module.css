@@ -6,11 +6,17 @@
 .heroBanner {
   background-repeat: no-repeat;
   background-image: url("../../static/img/72aa300c04e46df518fb3f6e04de2ad438d325ed-1.jpeg");
-  overflow: visible;
-  background-position: 100% 75%; 
-  background-size: 115%;
-  filter: contrast(90%);
-  opacity: 95%;
+  height: 600px; /* Fixed height; adjust as needed */
+  width: 100%;
+  background-size: cover; /* Covers the area, may crop */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Ensures text is readable; adjust based on your image */
+  text-align: center;
 }
 
 .heroBanner h1 {
@@ -38,12 +44,36 @@
   font-size: 24x;
 }
 
+.introTextButton {
+  font-weight: 600;
+  text-align: center;
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+  /* Styles for tablets in landscape orientation */
+}
+
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 0rem;
+    height: 460px; /* Fixed height; adjust as needed */
+  }
+  .heroBanner h1 {
+    padding: 0.7em 0 0 0;
+    font-size: 56px;
+  
+  }
+
+  .introTextButton {
+    margin-top: 0px;
+  
   }
 }
+
+
 
 .buttons {
   display: flex;

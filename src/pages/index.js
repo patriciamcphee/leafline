@@ -26,7 +26,7 @@ function HomepageHeader() {
           <div className={clsx("col", styles.heroBackground)}>
         <h1>Landscape Design<br />Installation<br />Maintenance</h1>
         
-        <div class="intro-text-button">
+        <div class={styles.introTextButton}>
               <Space wrap align='center' direction="vertical">
               <ConfigProvider
               
