@@ -18,13 +18,13 @@
   --ifm-color-primary-light: #2c705d;
   --ifm-color-primary-lighter: #2e7562;
   --ifm-color-primary-lightest: #34856e;
-  --ifm-color-background: #CDCDCD;
-  --ifm-color-background-dark: #999999;
-  --ifm-color-background-darker: #909090;
-  --ifm-color-background-darkest: #aaaaaa;
-  --ifm-color-background-light: #bbbbbb;
-  --ifm-color-background-lighter: #c3c3c3;
-  --ifm-color-background-lightest: #dddddd;
+  --ifm-color-background: #f4f1de;
+  --ifm-color-background-dark: #e8e2bb;
+  --ifm-color-background-darker: #e3dbaa;
+  --ifm-color-background-darkest: #d1c575;
+  --ifm-color-background-light: #ffffff;
+  --ifm-color-background-lighter: #ffffff;
+  --ifm-color-background-lightest: #ffffff;
   --ifm-code-font-size: 95%;
   --ifm-color-secondary: #4b3018;
   --ifm-color-secondary-dark: #603d20;
@@ -1300,4 +1300,15 @@ li {
   }
   
 
+}
+
+
+.banner {
+  padding: 4rem;
+}
+/** In mobile view, reduce the padding */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }
