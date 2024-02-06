@@ -49,7 +49,8 @@
 .introTextButton {
   font-weight: 600;
   text-align: center;
-
+  justify-content: center;
+  align-items: center;
 }
 
 
