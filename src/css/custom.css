@@ -131,6 +131,11 @@ h4 {
   background-image: url("@site/static/img/logo.png")
 }
 
+.footerLogo {
+  width: 350px;
+}
+
+
 [data-theme='dark'] .sidebar-version {
   color: white;
   background-color: #95a8db26;

@@ -183,7 +183,8 @@ const config = {
         
         logo: {
           alt: "LeafLine Garden Design LLC",
-          src: "img/logo-white-full.png",
+          src: "img/logo-white-full@3x.png",
+          className: 'footerLogo',
 
         },
         copyright: `© ${new Date().getFullYear()} Leafline Garden Design     •     (206) 880-0886`,
