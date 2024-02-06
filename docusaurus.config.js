@@ -144,7 +144,7 @@ const config = {
         },
         {
 					href: 'https://form.jotform.com/240356312632044',
-					label: 'Get a Quote!', position: 'right'
+					label: 'Request a Consultation!', position: 'right'
 				},
         
           /*
