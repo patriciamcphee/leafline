@@ -123,6 +123,10 @@ h4 {
 
 } 
 
+[data-theme='dark'] .header-logo {
+  background-image: url("@site/static/img/logo-white.png")
+}
+
 [data-theme='dark'] .sidebar-version {
   color: white;
   background-color: #95a8db26;
@@ -845,7 +849,7 @@ div[class^="tocCollapsibleContent"] ul li {
 
 
 .intro-visual {
-  padding: 4em;
+  padding: 0em;
   margin: 0;
 
   border-radius: 0px;
@@ -1174,7 +1178,7 @@ html[data-theme="dark"] .changelog-tag[data-tag="Removed"] {
   }
 
   .intro-visual {
-    padding: 1.5em;
+    padding: 1em;
 
     background-image: none;
  
