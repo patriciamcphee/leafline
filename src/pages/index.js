@@ -24,7 +24,7 @@ function HomepageHeader() {
 
   return (
     <header className={clsx("hero", styles.heroBanner)}>
-          <div className={clsx("col", styles.heroBackground)}>
+          <div className={clsx(styles.heroBackground)}>
         <h1>Landscape Design<br />Installation<br />Maintenance</h1>
         
         <div class={styles.introTextButton}>
