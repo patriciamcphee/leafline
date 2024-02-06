@@ -74,4 +74,10 @@ ul {
   .columns {
     flex-direction: column;
   }
+  .featureBodyLeft {
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+    margin: 1.2em 0;
+  }
 }
