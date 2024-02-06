@@ -127,6 +127,10 @@ h4 {
   background-image: url("@site/static/img/logo-white.png")
 }
 
+.header-logo {
+  background-image: url("@site/static/img/logo.png")
+}
+
 [data-theme='dark'] .sidebar-version {
   color: white;
   background-color: #95a8db26;
@@ -973,6 +977,11 @@ div[class^="tocCollapsibleContent"] ul li {
 @media (max-width: 768px) {
   .service-card {
     flex-basis: calc(50% - 2rem);
+  }
+  .navbar__logo,
+  .navbar__logo img {
+    justify-content: center;
+
   }
 }
 
