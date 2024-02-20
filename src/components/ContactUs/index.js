@@ -22,7 +22,7 @@ function LetsConnect() {
 <p className={styles.featureBody}>Kickstart your garden transformation by sharing your dreams with us.</p>
 <p className={styles.featureBody}>
       <button
-        onClick={() => window.location.href = 'https://form.jotform.com/240356312632044'}
+        onClick={() => window.location.href = 'https://form.jotform.com/240434453503145'}
         style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer', backgroundColor: '#286655', color: 'white', border: 'none', borderRadius: '20px' }}
       >
         Request a Consultation!

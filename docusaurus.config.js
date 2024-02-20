@@ -113,9 +113,7 @@ const config = {
         },
       },
       navbar: {
-        title: "",
         logo: {
-          alt: "",
           src: "img/logo.png",
           className: 'header-logo',
         },
@@ -137,14 +135,16 @@ const config = {
 					label: 'About', position: 'right'
 				},
 */
+
         {
           type: 'doc',
           docId: 'page',
           position: 'right',
           label: '(206) 880-0886',
         },
+
         {
-					href: 'https://form.jotform.com/240356312632044',
+					href: 'https://form.jotform.com/240434453503145',
 					label: 'Request a Consultation!', position: 'right'
 				},
         
