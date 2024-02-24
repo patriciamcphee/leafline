@@ -12,7 +12,7 @@ const MyFooter = () => (
         <p className={styles.footerBody}><a href="https://www.leaflinegarden.design"><img className={styles.logo} src="/logo-white-full.png" alt="logo white" /></a></p>
 
         <p className={styles.footerBody}>
-        (206) 880-0886 | <a href="mailto:chris@leaflinegarden.deaign">chris@leaflinegarden.deaign</a></p>
+        (206) 880-0886 | <a href="mailto:chris@leaflinegarden.design">chris@leaflinegarden.design</a></p>
       </Col>
 
     </Row>
