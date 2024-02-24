@@ -9,7 +9,7 @@ const MyFooter = () => (
   <Footer className={styles.footerContainer}>
     <Row align="top">
     <Col span={24}>
-        <p className={styles.footerBody}><img className={styles.logo} src="/logo-white-full.png" alt="logo white" /></p>
+        <p className={styles.footerBody}><a href="https://www.leaflinegarden.design"><img className={styles.logo} src="/logo-white-full.png" alt="logo white" /></a></p>
 
         <p className={styles.footerBody}>
         (206) 880-0886 | <a href="mailto:chris@leaflinegarden.deaign">chris@leaflinegarden.deaign</a></p>

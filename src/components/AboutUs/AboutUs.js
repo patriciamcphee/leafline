@@ -4,7 +4,7 @@ import { Row, Col } from 'antd';
 import styles from './styles.module.css';
 
 const AboutUs = () => (
-  <div className={styles.aboutUsContainer}>
+  <div className={styles.aboutUsContainer} id="about">
     <Row justify="space-around" align="top">
       <Col span={24}>
       <h2 className={styles.aboutUsHeading}>Crafting Your Personal Eden in Seattle</h2>

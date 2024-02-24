@@ -50,7 +50,7 @@ const serviceData = [
 ];
 
 const OurServices = () => (
-  <div className={styles.servicesContainer}>
+  <div className={styles.servicesContainer} id="services">
     <Row gutter align="top">
       <Col span={24}>
     <h2 className={styles.servicesHeading}>Our Services</h2>

@@ -8,7 +8,7 @@ const style = {
 };
 
 const LetsConnect = () => (
-  <div className={styles.sectionContainer}>
+  <div className={styles.sectionContainer} id="connect">
     <Row align="top">
       <Col>
     <h2 className={styles.sectionHeading}>Let's Connect</h2>
