@@ -1,0 +1,43 @@
+.footerContainer {
+  background-color: #6B4423;
+  color: white;
+  font-size: 12px;
+  padding: 2em;
+}
+
+.footerBody {
+  text-align: center;
+  justify-self: stretch;
+  margin: 1em 0;
+}
+
+.footerCopyRight {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 14px;
+}
+
+
+.footerContainer a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footerContainer a:hover {
+  color: white;
+}
+.logo {
+  height: 180px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footerContainer .ant-row .ant-col {
+
+    margin-bottom: 20px;
+  }
+}

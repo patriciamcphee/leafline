@@ -1,0 +1,23 @@
+.sectionContainer {
+  padding: 2em 6em;
+}
+
+.sectionBody {
+  margin: 24px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Tablet View */
+@media (min-width: 298px) {
+  .sectionContainer {
+    padding: 2em;
+  }
+
+
+}
