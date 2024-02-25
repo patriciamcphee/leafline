@@ -17,6 +17,10 @@
   font-size: 12px;
 }
 
+.footerCopyRight img {
+  margin-bottom: -4px;
+}
+
 
 .footerContainer a {
   color: white;

@@ -28,7 +28,7 @@
 }
 
 /* Ensure ul and li match the text alignment and font size */
-li {
+.styledBulletList li {
   font-size: 20px;
   text-align: left;
   line-height: 150%;

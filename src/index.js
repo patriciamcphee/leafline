@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs/AboutUs.js';
 import OurServices from './components/OurServices/OurServices.js';
 import LetsConnect from './components/LetsConnect/LetsConnect.js';
 import MyFooter from './components/Footer/Footer.js';
+import ScrollToTop from "react-scroll-to-top";
 
 import { Divider, ConfigProvider } from 'antd';
 
@@ -26,6 +27,7 @@ root.render(
   <React.StrictMode>
     
     <Navbar />
+    <ScrollToTop />
     <Hero />
     <AboutUs />
     <Divider />
