@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import { Button, ConfigProvider } from 'antd';
 import styles from './styles.module.css';
-const style = {
-
-  color: '#fff',
-
-
-};
 
 function Navbar() {
   // adding the states 
