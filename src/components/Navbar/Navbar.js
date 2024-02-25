@@ -1,6 +1,5 @@
-// src/components/Navbar.js
-import React from 'react';
-import { Layout, Menu, Row, Col, Button, ConfigProvider } from 'antd';
+import { useState } from 'react';
+import { Button, ConfigProvider } from 'antd';
 import styles from './styles.module.css';
 const style = {
 
@@ -9,15 +8,25 @@ const style = {
 
 };
 
-const { Header } = Layout;
+function Navbar() {
+  // adding the states 
+  const [isActive, setIsActive] = useState(false);
 
-const Navbar = () => (
-  <Header className={styles.height}>
-    <Row justify="space-between" align="middle">
-      <Col>
-        <a href="https://www.leaflinegarden.design"><img src="/final-logo.png" height="84px" alt="main logo" /></a>
-      </Col>
-        <Col>
+  //add the active class
+  const toggleActiveClass = () => {
+    setIsActive(!isActive);
+  };
+
+  //clean up function to remove the active class
+  const removeActive = () => {
+    setIsActive(false)
+  }
+
+  return (
+    <div className="App">
+      <header className="App-header">
+
+        <nav className={`${styles.navbar}`}>
         <ConfigProvider
                 theme={{
                   token: {
@@ -28,23 +37,37 @@ const Navbar = () => (
                   }
                 }
               >
-        <Menu mode="horizontal">  
-        <Menu.Item key="link"><a href="#about">About Us</a></Menu.Item>  
-        <Menu.Item key="link"><a href="#services">Our Services</a></Menu.Item>
-        <Menu.Item key="link">
-              
-                <Button type="primary" shape="round" style={style} href="https://form.jotform.com/240434453503145" target="_blank">
+          {/* logo */}
+          <a href="https://www.leaflinegarden.design"><img className={styles.contactButton} src="/final-logo.png" height="74px" alt="main logo" /></a>
+
+          <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
+            <li onClick={removeActive} className={styles.listAdustment}>
+              <a href='#home' className={`${styles.navLink}`}>Home</a>
+            </li>
+            <li onClick={removeActive}>
+              <a href='#about' className={`${styles.navLink}`}>About Us</a>
+            </li>
+            <li onClick={removeActive}>
+              <a href='#services' className={`${styles.navLink}`}>Services</a>
+            </li>
+            <li onClick={removeActive}>
+            <Button type="primary" shape="round" style={style} href="https://form.jotform.com/240434453503145" target="_blank">
                 Request a Consultation!
                 </Button>
-              
-              </Menu.Item>
-          <Menu.Item key="phone"><b>(206) 880-0886</b></Menu.Item>
-        </Menu>
+            </li>
+          </ul>
 
-        </ConfigProvider>
-      </Col>
-    </Row>
-  </Header>
-);
+          <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>
+            <span className={`${styles.bar}`}></span>
+            <span className={`${styles.bar}`}></span>
+            <span className={`${styles.bar}`}></span>
+          </div>
+          </ConfigProvider>
+        </nav>
+
+      </header>
+    </div>
+  );
+}
 
 export default Navbar;
