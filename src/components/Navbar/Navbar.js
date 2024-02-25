@@ -29,16 +29,16 @@ const Navbar = () => (
                 }
               >
         <Menu mode="horizontal">  
-        <Menu.Item><a href="#about">About Us</a></Menu.Item>  
-        <Menu.Item><a href="#services">Our Services</a></Menu.Item>
-        <Menu.Item>
+        <Menu.Item key="link"><a href="#about">About Us</a></Menu.Item>  
+        <Menu.Item key="link"><a href="#services">Our Services</a></Menu.Item>
+        <Menu.Item key="link">
               
                 <Button type="primary" shape="round" style={style} href="https://form.jotform.com/240434453503145" target="_blank">
                 Request a Consultation!
                 </Button>
               
               </Menu.Item>
-          <Menu.Item><b>(206) 880-0886</b></Menu.Item>
+          <Menu.Item key="phone"><b>(206) 880-0886</b></Menu.Item>
         </Menu>
 
         </ConfigProvider>
