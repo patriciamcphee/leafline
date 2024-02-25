@@ -25,9 +25,8 @@ root.render(
     }}
     >
   <React.StrictMode>
-    
-    <Navbar />
     <ScrollToTop />
+    <Navbar />
     <Hero />
     <AboutUs />
     <Divider />
