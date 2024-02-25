@@ -38,7 +38,7 @@ function Navbar() {
                 }
               >
           {/* logo */}
-          <a href="https://www.leaflinegarden.design"><img className={styles.contactButton} src="/final-logo.png" height="74px" alt="main logo" /></a>
+          <a href="https://www.leaflinegarden.design"><img src="/final-logo.png" height="74px" alt="main logo" /></a>
 
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
 
@@ -52,7 +52,7 @@ function Navbar() {
               <a href='#home' className={`${styles.links}`}>(206) 880-0886</a>
             </li>
             <li onClick={removeActive}>
-            <Button type="primary" shape="round" style={style} href="https://form.jotform.com/240434453503145" target="_blank">
+            <Button type="primary" shape="round" className={styles.contactButton} href="https://form.jotform.com/240434453503145" target="_blank">
                 Request a Consultation!
                 </Button>
             </li>

@@ -65,9 +65,8 @@ a {
 }
 
 .contactButton {
-  margin: 6px;
-  align-self: center;
-  vertical-align: middle;
+  margin-top: -8px;
+  vertical-align: top;
 }
 
 /* media queries */
