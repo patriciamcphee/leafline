@@ -41,14 +41,15 @@ function Navbar() {
           <a href="https://www.leaflinegarden.design"><img className={styles.contactButton} src="/final-logo.png" height="74px" alt="main logo" /></a>
 
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
+
+            <li onClick={removeActive}>
+              <a href='#about' className={`${styles.links}`}>About Us</a>
+            </li>
+            <li onClick={removeActive}>
+              <a href='#services' className={`${styles.links}`}>Services</a>
+            </li>
             <li onClick={removeActive} className={styles.listAdustment}>
-              <a href='#home' className={`${styles.navLink}`}>Home</a>
-            </li>
-            <li onClick={removeActive}>
-              <a href='#about' className={`${styles.navLink}`}>About Us</a>
-            </li>
-            <li onClick={removeActive}>
-              <a href='#services' className={`${styles.navLink}`}>Services</a>
+              <a href='#home' className={`${styles.links}`}>(206) 880-0886</a>
             </li>
             <li onClick={removeActive}>
             <Button type="primary" shape="round" style={style} href="https://form.jotform.com/240434453503145" target="_blank">

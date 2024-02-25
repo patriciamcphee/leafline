@@ -1,12 +1,11 @@
 .height {
-  padding: 10px 40px;
-  height: 86px;
+
+  height: 82px;
   background-color: white;
   
 }
 
 .links {
-
   vertical-align: bottom;
 }
 
@@ -61,14 +60,14 @@ a {
   gap: 60px;
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  margin-top: 10px;
 
 }
 
 .contactButton {
   margin: 6px;
   align-self: center;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 /* media queries */
@@ -110,7 +109,7 @@ a {
     position: absolute;
     flex-direction: column;
     gap: 0;
-    top: 106px;
+    top: 96px;
     left: -100%;
     text-align: start;
     width: 50%;
