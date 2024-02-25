@@ -1,7 +1,6 @@
 .footerContainer {
   background-color: #6B4423;
   color: white;
-  font-size: 12px;
   padding: 2em;
 }
 
@@ -9,13 +8,42 @@
   text-align: center;
   justify-self: stretch;
   margin: 1em 0;
+  vertical-align: middle;
 }
+
+.footerBody li {
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
+  list-style-image: url('../../../public/favicons/favicon-24x24.png');
+  margin: 0.5em 0;
+}
+
+.footerBody ul {
+    align-self: center;
+  margin-top: 24px;
+
+}
+
+.styledBulletList li {
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
+  list-style-image: url('../../../public/favicons/favicon-24x24.png');
+  margin: 0.5em 0;
+}
+
 
 .footerCopyRight {
   text-align: center;
   margin: 1em 0;
   font-size: 12px;
 }
+
+.footerCopyRight a {
+  font-size: 12px;
+}
+
 
 .footerCopyRight img {
   margin-bottom: -4px;
@@ -34,19 +62,33 @@
 .logo {
   height: 180px;
   margin: auto;
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px 0 0 0;
+  text-align: left;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .footerContainer {
 
+  
+  }
+
+  .footerBody ul {
+    vertical-align: top;
+      margin-left: -24px;
+    
+  }
+
+  .footerBody li {
+    text-align: center;
+    list-style-image: none;
+    list-style-type: none;
   }
 
   .logo {
     height: 160px;
     text-align: center;
+    margin-bottom:  -24px;
   }
   
 }

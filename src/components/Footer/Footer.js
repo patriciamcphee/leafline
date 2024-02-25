@@ -7,20 +7,25 @@ const { Footer } = Layout;
 
 const MyFooter = () => (
   <Footer className={styles.footerContainer}>
-    <Row align="top">
-    <Col span={24}>
+    <Row gutter={[60]} justify="space-around" align="top">
+    <Col xs={24} sm={12} md={8}>
         <p className={styles.footerBody}><a href="https://www.leaflinegarden.design"><img className={styles.logo} src="/logo-white-full.png" alt="logo white" /></a></p>
-
+</Col>
+<Col xs={24} sm={12} md={8} >
         <p className={styles.footerBody}>
-        (206) 880-0886 &nbsp;&nbsp;<img src="/favicons/favicon-24x24.png" alt="leafline icon" width="14px"  />&nbsp;&nbsp; <a href="www.leaflinegarden.design">www.leaflinegarden.design</a> &nbsp;&nbsp;<img src="/favicons/favicon-24x24.png" alt="leafline icon" width="14px"  />&nbsp;&nbsp; <a href="mailto:chris@leaflinegardendesign.com">chris@leaflinegardendesign.com</a></p>
+          <ul>
+            <li>(206) 880-0886</li>
+            <li className={styles.styledBulletList}><a href="www.leaflinegarden.design">www.leaflinegarden.design</a></li>
+            <li className={styles.styledBulletList}><a href="mailto:chris@leaflinegardendesign.com">chris@leaflinegardendesign.com</a></li>
+          </ul>
+        </p>
       </Col>
 
     </Row>
-    <Row align="top">
+    <Row>
       <Col span={24}>
         <p className={styles.footerCopyRight}>©2024 &nbsp;&nbsp;<img src="/favicons/favicon-24x24.png" alt="leafline icon" width="14px"  />&nbsp;&nbsp; Leafline Garden Design LLC</p>
       </Col>
-
     </Row>
   </Footer>
 );
