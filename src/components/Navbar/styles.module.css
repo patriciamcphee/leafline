@@ -77,7 +77,7 @@ a {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin: 40px 20px;
+    margin: 40px 10px;
   }
 
   .bar {
