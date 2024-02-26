@@ -69,13 +69,14 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .footerContainer {
-
+    padding: 1em;
   
   }
 
   .footerBody ul {
     vertical-align: top;
-      margin-left: -30px;
+      margin-left: -40px;
+      justify-content: center;
     
   }
 
