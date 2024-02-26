@@ -8,7 +8,7 @@ const serviceData = [
     id: 1,
     title: 'Custom Landscape Design',
     description: 'Explore creativity through our custom design services, tailoring each project to reflect your dreams and meet your needs affordably.',
-    image: 'https://images.unsplash.com/photo-1599110906632-28d25094470f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // Placeholder image path
+    image: '1405494131161.jpeg', // Placeholder image path
     imgAlt: 'Service 1 Image',
   },
   {
