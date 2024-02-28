@@ -1,0 +1,8 @@
+/* src/components/BackToTopButton.css */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  z-index: 1000;
+}
