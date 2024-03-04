@@ -9,6 +9,7 @@ import OurServices from './components/OurServices/OurServices.js';
 import LetsConnect from './components/LetsConnect/LetsConnect.js';
 import MyFooter from './components/Footer/Footer.js';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
+import FaqSection from './components/CollapsibleFAQ/CollapsibleFAQ.js';
 
 import { Divider, ConfigProvider } from 'antd';
 
@@ -33,6 +34,8 @@ root.render(
     <OurServices />
     <Divider />
     <LetsConnect />
+    <Divider />
+    <FaqSection />
     <MyFooter />
     
   </React.StrictMode>
