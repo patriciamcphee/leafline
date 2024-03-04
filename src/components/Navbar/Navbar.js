@@ -42,6 +42,9 @@ function Navbar() {
             <li onClick={removeActive}>
               <a href='#services' className={`${styles.links}`}>Services</a>
             </li>
+            <li onClick={removeActive}>
+              <a href='#faqs' className={`${styles.links}`}>FAQs</a>
+            </li>
             <li onClick={removeActive} className={styles.listAdustment}>
               <a href='#home' className={`${styles.links}`}>(206) 880-0886</a>
             </li>

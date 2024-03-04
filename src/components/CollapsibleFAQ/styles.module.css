@@ -1,0 +1,132 @@
+/* src/components/styles.module.css adjustments for AboutUs component */
+.section {
+  padding: 6em;
+  display: block;
+  flex-wrap: nowrap;
+/*  justify-content: space-around;*/
+  justify-items: center;
+}
+
+.sectionContainer {
+  padding: 2em 6em;
+  justify-items: center;
+}
+
+.aboutUsContainer {
+  padding: 2em 2em 4em 2em;
+
+}
+
+.aboutUsHeading {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.aboutUsBodyLeft {
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
+  margin: 1em 0;
+}
+
+/* Ensure ul and li match the text alignment and font size */
+.styledBulletList li {
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
+  list-style-image: url('../../../public/favicons/favicon-24x24.png');
+  margin: 0.5em 0;
+}
+
+ul {
+  margin-top: -18px;
+}
+
+
+/* src/components/FAQSection.css */
+.faqContainer {
+  max-width: 60%; /* Adjust based on preference */
+  margin: auto;
+  padding: 2em 4em 4em 2em;
+  justify-items: center;
+}
+
+.antCollapse > .antCollapseItem > .antCollapseHeader {
+  font-size: 24px;
+  background-color: #cecece;
+  border: 0 !important; /* Remove border */
+}
+
+.antCollapseContent > .antCollapseContentBox {
+  font-size: 18px; /* Adjust based on preference */
+}
+
+.antCollapse > .antCollapseItem {
+  border: 0 !important; /* Remove border around collapsible item */
+}
+
+.antCollapse > .antCollapseItem > .antCollapseHeader .antCollapseArrow {
+  color: black; /* Adjust arrow color if needed */
+}
+
+
+/* ---- */
+
+
+
+/* Responsive adjustments for stacking columns on smaller screens */
+@media (max-width: 768px) {
+  .aboutUsContainer, .section, .faqContainer {
+    padding: 2em;
+    margin: auto;
+    max-width: 100%;
+  }
+
+
+
+/* Adjust column span for smaller screens */
+.colResponsive {
+  width: 100%;
+  padding: 0 10px; /* Adjust as needed for your design */
+}
+  
+
+  .aboutUsBodyLeft {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* Target Ant Design Col components for responsive grid adjustments */
+  .ant-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Additional responsive adjustments for tablets and small desktops */
+@media (min-width: 769px) and (max-width: 992px) {
+  .section .ant-col {
+    span: 12 !important;
+  }
+  .aboutUsContainer, .section {
+    padding: 1em;
+    margin: 0;
+    width: 100%;
+  }
+  .faqContainer {
+    padding: 0em;
+    margin: auto;
+    width: 100%;
+  }
+
+}
+
+.faq-section {
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.faq-section h3 {
+  color: #1890ff;
+}
