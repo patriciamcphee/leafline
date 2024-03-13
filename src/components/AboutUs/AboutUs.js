@@ -24,7 +24,7 @@ const AboutUs = () => (
         <li><b>Sustainable Design</b>: Our projects utilize native and native-like plants to support local ecosystems and promote biodiversity.</li>
         <li><b>Unique Aesthetic Fusion</b>: Our designs blend the elegance of Japanese gardens with the essence of the Pacific Northwest, creating tranquil retreats that are thriving ecosystems full of life. </li>
         <li><b>Ecosystem Focus</b>: We design gardens that foster symbiotic relationships within the soil and its inhabitants, benefiting native wildlife and plant health.</li>
-        <li><b>Personalized Service</b>:We offer tailored services that honor your dreams, with a flexible approach to bring your ideal garden to life.</li>
+        <li><b>Personalized Service</b>: We offer tailored services that honor your dreams, with a flexible approach to bring your ideal garden to life.</li>
       </ul>
       </Col>
     </Row>
