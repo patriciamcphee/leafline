@@ -5,25 +5,38 @@
 }
 
 .footerBody {
+  margin: auto;
+  padding: 10px;
+
   text-align: center;
+    /*
   justify-self: stretch;
   margin: 1em 0;
   vertical-align: middle;
+  */
+}
+
+.footerBody .phoneNumber {
+  font-size: 24px;
+
 }
 
 .footerBody li {
   font-size: 20px;
   text-align: left;
-  line-height: 150%;
+  line-height: 140%;
   list-style-image: url('../../../public/favicons/favicon-24x24.png');
-  margin: 0.5em 0;
+
 }
+
 
 .footerBody ul {
-    align-self: center;
-  margin-top: 24px;
+
+
+margin: 32px 0 0 0;
 
 }
+
 
 .styledBulletList li {
   font-size: 20px;

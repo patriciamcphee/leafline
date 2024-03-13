@@ -14,9 +14,9 @@ const MyFooter = () => (
 <Col xs={24} sm={12} md={8} >
         <p className={styles.footerBody}>
           <ul>
-            <li>(206) 880-0886</li>
+            <li className={styles.phoneNumber}>(206) 880-0886</li>
             <li className={styles.styledBulletList}><a href="www.leaflinegarden.design">www.leaflinegarden.design</a></li>
-            <li className={styles.styledBulletList}><a href="mailto:chris@leaflinegardendesign.com">chris@leaflinegardendesign.com</a></li>
+            <li className={styles.styledBulletList}><a href="mailto:chris@leaflinegardendesign.com">chris@leaflinegarden.design</a></li>
           </ul>
         </p>
       </Col>
