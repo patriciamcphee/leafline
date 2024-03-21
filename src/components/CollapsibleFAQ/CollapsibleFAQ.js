@@ -25,7 +25,7 @@ const faqData = [
   { 
     key: '4', 
     question: 'What types of service packages do you offer?', 
-    answer: 'Our services are tailored to meet the unique needs of each project, with pricing based on the job’s specific requirements. We offer a range of services, including design, fine pruning, planting/transplanting, spreading wood chips/mulch, and specialized weeding (with a focus on ivy and blackberry removal). Please note, while we maintain grass along bed edges, we offer limited lawn care services. All physical labor is billed at $80/hr.' 
+    answer: 'Our services are tailored to meet the unique needs of each project, with pricing based on the job’s specific requirements. We offer a range of services, including design, fine pruning, planting/transplanting, spreading wood chips/mulch, and specialized weeding (with a focus on ivy and blackberry removal). Please note, while we maintain grass along bed edges, we offer limited lawn care services. All physical labor is billed at an hourly rate.' 
   },
   { 
     key: '5', 
