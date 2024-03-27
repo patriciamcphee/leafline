@@ -8,9 +8,10 @@ const AboutUs = () => (
     <Row justify="space-around" align="top">
       <Col span={24}>
       <h2 className={styles.aboutUsHeading}>Crafting Your Personal Eden in Seattle</h2>
+
+      <p className={styles.aboutUsLicense}>Licensed, bonded, and insured.</p>
       </Col>
     </Row>
-
     <Row gutter={[60]} className={styles.section} justify="space-around" align="top">
       <Col xs={24} sm={12} md={12}>
         <p className={styles.aboutUsBodyLeft}>Led by a passionate horticulture expert from Lake Washington Tech with 5+ years in the field, <b>Leafline Garden Design</b> crafts your garden with precision and horticultural expertise.</p>
