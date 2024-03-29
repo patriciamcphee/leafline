@@ -25,7 +25,7 @@ const LetsConnect = () => (
           },
         }}
       >
-        <Button type="primary" shape="round" size="large" style={style} href="https://form.jotform.com/240434453503145" target="_blank">
+        <Button type="primary" shape="round" size="large" style={style} href="landscape-request.html" target="_blank">
           <b>Request a Consultation!</b>
         </Button>
       </ConfigProvider>

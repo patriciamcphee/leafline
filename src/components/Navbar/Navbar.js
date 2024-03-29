@@ -46,10 +46,10 @@ function Navbar() {
               <a href='#faqs' className={`${styles.links}`}>FAQs</a>
             </li>
             <li onClick={removeActive} className={styles.listAdustment}>
-              <a href='#home' className={`${styles.links}`}>(206) 880-0886</a>
+              (206) 880-0886
             </li>
             <li onClick={removeActive}>
-            <Button type="primary" shape="round" className={styles.contactButton} href="https://form.jotform.com/240434453503145" target="_blank">
+            <Button type="primary" shape="round" className={styles.contactButton} href="landscape-request.html" target="_blank">
                 Request a Consultation!
                 </Button>
             </li>

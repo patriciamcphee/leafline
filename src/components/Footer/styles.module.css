@@ -16,6 +16,11 @@
   */
 }
 
+.footerBody .licensed {
+  margin: 10px 0;
+
+}
+
 .footerBody .phoneNumber {
   font-size: 24px;
 
