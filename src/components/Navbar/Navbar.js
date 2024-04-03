@@ -34,6 +34,7 @@ function Navbar() {
           {/* logo */}
           <a href="https://www.leaflinegarden.design"><img src="/final-logo.png" height="74px" alt="main logo" /></a>
 
+
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
 
             <li onClick={removeActive}>
