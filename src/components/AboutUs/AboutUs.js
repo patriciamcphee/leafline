@@ -8,8 +8,6 @@ const AboutUs = () => (
     <Row justify="space-around" align="top">
       <Col span={24}>
       <h2 className={styles.aboutUsHeading}>Crafting Your Personal Eden in Seattle</h2>
-
-      <p className={styles.aboutUsLicense}>Licensed, bonded, and insured.</p>
       </Col>
     </Row>
     <Row gutter={[60]} className={styles.section} justify="space-around" align="top">
