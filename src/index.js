@@ -10,6 +10,7 @@ import LetsConnect from './components/LetsConnect/LetsConnect.js';
 import MyFooter from './components/Footer/Footer.js';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
 import FaqSection from './components/CollapsibleFAQ/CollapsibleFAQ.js';
+import BeforeAfterGallery from './components/BeforeAfterGallery/BeforeAfterGallery.jsx';
 
 import { Divider, ConfigProvider } from 'antd';
 
@@ -32,6 +33,8 @@ root.render(
     <AboutUs />
     <Divider />
     <OurServices />
+    <Divider />
+    <BeforeAfterGallery />
     <Divider />
     <LetsConnect />
     <Divider />
