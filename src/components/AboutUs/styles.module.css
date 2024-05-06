@@ -1,6 +1,6 @@
 /* src/components/styles.module.css adjustments for AboutUs component */
 .section {
-  padding: 0em 2em;
+  padding: 0em 4em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -8,7 +8,7 @@
 }
 
 .aboutUsContainer {
-  padding: 4em 2em 2em 2em;
+  padding: 2em 2em 2em 2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
