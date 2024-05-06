@@ -1,8 +1,10 @@
 .sectionContainer {
   padding: 2em 6em;
+  width: max-content;
 }
 
 .sectionBody {
+  padding: 0em 4em;
   margin: 24px 0;
   font-size: 20px;
   text-align: center;
@@ -10,6 +12,11 @@
 
 .sectionHeading {
   font-size: 36px;
+  text-align: center;
+}
+
+.sectionSubHeading {
+  font-size: 28px;
   text-align: center;
 }
 

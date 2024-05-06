@@ -11,8 +11,9 @@ const LetsConnect = () => (
   <div className={styles.sectionContainer} id="connect">
     <Row align="top">
       <Col>
-    <h2 className={styles.sectionHeading}>Let's Connect</h2>
-    <p className={styles.sectionBody}>Dreaming of the perfect garden? Let's make it happen. Whether it's a peaceful retreat or a vibrant garden ecosystem, your outdoor space is a canvas waiting for a touch of creativity and expertise.</p>
+    <h2 className={styles.sectionHeading}>Dreaming of the perfect garden?</h2>
+    <h3 className={styles.sectionSubHeading}>Let's make it happen!</h3>
+    <p className={styles.sectionBody}>Whether it's a peaceful retreat or a vibrant garden ecosystem, your outdoor space is a canvas waiting for a touch of creativity and expertise.</p>
     <p className={styles.sectionBody}>Kickstart your garden transformation by sharing your dreams with us.</p>
     <br />
     <p className={styles.sectionBody}>
