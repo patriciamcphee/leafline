@@ -52,6 +52,11 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.license {
+  font-size: 13px;
+  font-style: italic;
+}
+
 
 /* ul  */
 .navMenu {

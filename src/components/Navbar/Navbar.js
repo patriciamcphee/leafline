@@ -44,6 +44,9 @@ function Navbar() {
               <a href='#services' className={`${styles.links}`}>Services</a>
             </li>
             <li onClick={removeActive}>
+              <a href='#photo-gallery' className={`${styles.links}`}>Photos</a>
+            </li>
+            <li onClick={removeActive}>
               <a href='#faqs' className={`${styles.links}`}>FAQs</a>
             </li>
             <li onClick={removeActive} className={styles.listAdustment}>
@@ -53,6 +56,9 @@ function Navbar() {
             <Button type="primary" shape="round" className={styles.contactButton} href="landscape-request.html" target="_blank">
                 Request a Consultation!
                 </Button>
+            </li>
+            <li onClick={removeActive} className={styles.license}>
+            Lic#: LEAFLGD763C8
             </li>
           </ul>
 
