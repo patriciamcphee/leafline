@@ -1,0 +1,108 @@
+.section {
+  padding: 0em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.galleryContainer {
+  padding: 4em 2em 2em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.galleryHeading {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+/* BeforeAfterGallery.css */
+.gallery-container {
+  text-align: center;
+  margin: 60px;
+  width: auto;
+  align-items: center;
+  display: block;
+  justify-content: center;
+  padding: 0em 4em;
+}
+
+/* BeforeAfterGallery.css */
+.buttons button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #286655; /* Green background */
+  color: white;
+  opacity: 0.4;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+}
+
+.buttons button:hover {
+  background-color: #A2C523; /* Slightly darker on hover */
+}
+
+.buttons button.active {
+  background-color: #286655; /* Green background for active button */
+  color: white; /* White text for active button */
+  opacity: 100%;
+}
+
+
+
+/* BeforeAfterGallery.css */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #286655; /* Green color for active tab */
+  font-weight: bold; /* Make it bold for better visibility */
+}
+
+.ant-tabs-tab .ant-tabs-tab-btn {
+ /* color: #ccc;  Gray out inactive tabs */
+}
+
+.image-container {
+  width: 740px;
+  
+}
+
+
+
+.image-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  cursor: pointer; /* Indicates the image can be clicked to open in lightbox */
+
+}
+
+/* BeforeAfterGallery.css */
+.image-preview button {
+  padding: 20px;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.9; /* Ensuring that the active state is slightly opaque */
+}
+
+.image-preview button:disabled {
+  color: #777; /* Gray out the icon */
+  cursor: not-allowed;
+  opacity: 0.5; /* Further reduce opacity for disabled buttons */
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  font-style: italic;
+}
+
+
