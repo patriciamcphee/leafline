@@ -40,6 +40,15 @@
 
 }
 
+.servicesDisclaimer {
+  font-size: 20px;
+  text-align: center;
+  line-height: 150%;
+  padding: 1em;
+
+
+}
+
 
 .serviceHeadingBackground {
   border-bottom: 6px solid #6b4423;

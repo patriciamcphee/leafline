@@ -51,10 +51,11 @@ const serviceData = [
 
 const OurServices = () => (
   <div className={styles.servicesContainer} id="services">
-    <Row gutter align="top">
-      <Col span={24}>
     <h2 className={styles.servicesHeading}>Our Services</h2>
-    <p className={styles.servicesBody}>Understanding that each garden has its own soul and each homeowner‘s vision, we offer a suite of flexible services tailored to meet our clients’ unique needs and desires.</p></Col>
+    <Row gutter align="top">
+      <Col span={24}>    
+    <p className={styles.servicesBody}>We offer a suite of tailored landscaping maintenance services designed to meet the unique needs and desires of both discerning commercial clients and homeowners. Our team specializes in providing meticulous care, recognizing that each garden possesses its own soul and each client has a distinct vision for their outdoor spaces. Whether it's a vibrant commercial property or a serene private residence, we ensure every landscape we handle reflects our commitment to excellence and attention to detail.</p>
+    </Col>
     </Row>
 
 
