@@ -1,11 +1,35 @@
+.section {
+  padding: 0em 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.letsChatContainer {
+  padding: 2em 2em 2em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
 .sectionContainer {
-  padding: 2em 6em;
+  padding: 2em 4em;
   width: max-content;
 }
 
 .sectionBody {
   padding: 0em 4em;
   margin: 24px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sectionButton {
+  padding: 0em 4em;
+  margin: 0 0 40px 0;
   font-size: 20px;
   text-align: center;
 }
@@ -23,8 +47,42 @@
 /* Tablet View */
 @media (min-width: 298px) {
   .sectionContainer {
-    padding: 2em;
+    padding: 1em;
   }
 
 
+}
+
+
+/* Responsive adjustments for stacking columns on smaller screens */
+@media (max-width: 768px) {
+  .aboutUsContainer, .section {
+    padding: 1em 0.5em;
+    margin: 0;
+  }
+
+/* Adjust column span for smaller screens */
+.colResponsive {
+  width: 100%;
+  padding: 0 10px; /* Adjust as needed for your design */
+}
+  
+
+  .sectionBody {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* Target Ant Design Col components for responsive grid adjustments */
+  .ant-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Additional responsive adjustments for tablets and small desktops */
+@media (min-width: 769px) and (max-width: 992px) {
+  .section .ant-col {
+    span: 12 !important;
+  }
 }

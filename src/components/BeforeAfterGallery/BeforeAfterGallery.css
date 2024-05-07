@@ -106,3 +106,40 @@
 }
 
 
+
+/* Responsive adjustments for stacking columns on smaller screens */
+@media (max-width: 768px) {
+  .gallery-container, .section, .image-preview {
+    padding: 1em;
+    margin: 0;
+  }
+  .image-container {
+    width: 90%;
+    
+  }
+
+/* Adjust column span for smaller screens */
+.colResponsive {
+  width: 100%;
+  padding: 0 10px; /* Adjust as needed for your design */
+}
+  
+
+  .sectionBody {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* Target Ant Design Col components for responsive grid adjustments */
+  .ant-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Additional responsive adjustments for tablets and small desktops */
+@media (min-width: 769px) and (max-width: 992px) {
+  .section .ant-col {
+    span: 12 !important;
+  }
+}
