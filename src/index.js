@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './components/Navbar/Navbar';
 import HeroSection from './components/Hero/HeroSection.jsx';
-
+import AboutSection from './components/AboutSection/AboutSection.jsx';
+import ServicesSection from './components/ServicesSection/ServicesSection.jsx';
+import PhotoFooterSection from './components/PhotoFooterSection/PhotoFooterSection.jsx';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
 
 import { ConfigProvider } from 'antd';
@@ -23,10 +24,10 @@ root.render(
     >
   <React.StrictMode>
     <BackToTopButton />
-    <Navbar />
     <HeroSection />
-
-    
+    <AboutSection />
+    <ServicesSection />
+    <PhotoFooterSection />
   </React.StrictMode>
   </ConfigProvider>
 );

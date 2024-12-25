@@ -1,1 +1,0 @@
-export { PhotoFooterSection } from "./PhotoFooterSection";

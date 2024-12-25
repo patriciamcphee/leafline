@@ -1,28 +1,21 @@
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { Button, Col, Row, Typography } from "antd";
 import React from "react";
+import styles from './styles.module.css';
 
 const { Title, Paragraph } = Typography;
 
-export const ServicesSection = () => {
+const ServicesSection = () => {
   return (
-    <div style={{ padding: "0 20px" }}>
+    <div style={{ padding: "40px 40px 100px 40px", backgroundColor: "#286655" }}>
       <Row
         justify="space-between"
-        align="middle"
         style={{ marginBottom: "16px" }}
       >
-        <Col>
-          <Title level={2} style={{ margin: 0 }}>
+        <Col className={styles.sectionTitleRight}>
+          <Title level={5} id="services"> 
             [&nbsp;&nbsp;&nbsp;&nbsp;SERVICES&nbsp;&nbsp;&nbsp;&nbsp;]
           </Title>
-        </Col>
-        <Col>
-          <Button type="link" style={{ borderBottom: "1px solid #006400" }}>
-            <Title level={3} style={{ margin: 0, color: "#006400" }}>
-              See More Services
-            </Title>
-          </Button>
         </Col>
       </Row>
 
@@ -45,14 +38,14 @@ export const ServicesSection = () => {
                   style={{
                     marginRight: "8px",
                     borderColor: "#fff",
-                    color: "#fff",
+                    color: "#286655",
                   }}
                 >
                   Home
                 </Button>
                 <Button
                   shape="round"
-                  style={{ borderColor: "#fff", color: "#fff" }}
+                  style={{ borderColor: "#fff", color: "#286655" }}
                 >
                   Garden
                 </Button>
@@ -63,14 +56,14 @@ export const ServicesSection = () => {
                   style={{
                     marginRight: "8px",
                     borderColor: "#fff",
-                    color: "#fff",
+                    color: "#286655",
                   }}
                 >
                   Landscape Design
                 </Button>
                 <Button
                   shape="round"
-                  style={{ borderColor: "#fff", color: "#fff" }}
+                  style={{ borderColor: "#fff", color: "#286655" }}
                 >
                   Expert
                 </Button>
@@ -173,3 +166,5 @@ export const ServicesSection = () => {
     </div>
   );
 };
+
+export default ServicesSection;

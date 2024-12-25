@@ -1,0 +1,50 @@
+.sectionTitleLeft {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px 0;
+
+}
+
+.sectionTitleLeft h5 {
+  color: #286655;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+.crafting h1 {
+  margin: 40px 0;
+  color: #28665556;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 76px;
+
+}
+
+.crafting h3 {
+  margin: 40px 0;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.crafting span {
+  color: #286655;
+}
+
+.aboutTitle h2 {
+  font-family: "Plus Jakarta Sans", serif;
+  color: #286655;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 1px;
+}
+
+.aboutTitle p {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 4px;
+}

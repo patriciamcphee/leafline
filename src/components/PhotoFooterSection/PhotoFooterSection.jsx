@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "../../components/Button";
+import { Button } from "./Button";
 import "./style.css";
 
-export const PhotoFooterSection = () => {
+const PhotoFooterSection = () => {
   return (
     <div className="photo-footer-section">
       <div className="footer-section">
@@ -141,3 +141,5 @@ export const PhotoFooterSection = () => {
     </div>
   );
 };
+
+export default PhotoFooterSection;

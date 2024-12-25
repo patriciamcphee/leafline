@@ -1,88 +1,63 @@
-import { PlayCircleOutlined } from "@ant-design/icons";
-import { Button, Col, Row } from "antd";
+import { Col, Row, Typography } from "antd";
 import React from "react";
+import styles from './styles.module.css';
 
-export const AboutSection = () => {
+const { Title } = Typography;
+
+const ValuesSection = () => {
   return (
-    <div>
-      <Row gutter={[16, 16]} style={{ padding: "0 20px" }}>
-        <Col span={24}>
-          <img
-            style={{ width: "274.38px" }}
-            alt="Crafting DREAM"
-            src="/img/crafting-dream-gardens-into-reality.png"
-          />
+    <div style={{ padding: "40px 40px 100px 40px", backgroundColor: "#F4F1DE" }}>
+      <Row
+        justify="space-between"
+        align="top"
+      >
+        <Col className={styles.sectionTitleLeft}>
+          <Title level={5} id="about"> 
+            [&nbsp;&nbsp;&nbsp;&nbsp;ABOUT&nbsp;&nbsp;&nbsp;&nbsp;]
+          </Title>
         </Col>
-        <Col span={12}>
-          <p style={{ opacity: 0.5 }}>
-            At LeafLife, we are passionate about transforming outdoor spaces
-            into breathtaking gardens that tell a unique story. Our journey
-            began over a decade ago, driven by a shared love for nature
-          </p>
-        </Col>
-        <Col span={12}>
-          <p style={{ opacity: 0.5 }}>
-            and design. Since then, we have dedicated ourselves to creating
-            gardens that enhance your property. Our solid commitment to
-            sustainability, innovation, and collaboration has been the
-            foundation of our success.
-          </p>
-        </Col>
+
       </Row>
-      <Row gutter={[16, 16]} style={{ padding: "0 20px" }}>
-        <Col span={12}>
-          <div
-            style={{
-              width: "100%",
-              height: "300px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: "20px",
-              backgroundImage: "url(/img/video.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div
-              style={{
-                width: "80px",
-                height: "80px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                backgroundColor: "white",
-                borderRadius: "50%",
-              }}
-            >
-              <PlayCircleOutlined style={{ fontSize: "24px" }} />
-            </div>
-          </div>
+
+      <Row gutter={60} align="top">
+        <Col className={styles.crafting} span={10}>
+          <h1>CRAFTING <span>DREAM GARDENS</span> INTO REALITY</h1>
+          <h3>Led by a passionate horticulture expert from Lake Washington Tech with 5+ years in the field. We craft your garden with precision and horticultural expertise.</h3>
         </Col>
-        <Col span={12}>
-          <div
-            style={{
-              width: "100%",
-              height: "300px",
-              display: "flex",
-              alignItems: "flex-end",
-              justifyContent: "flex-end",
-              padding: "16px",
-              borderRadius: "20px",
-              backgroundImage: "url(/img/photo.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <Button
-              type="link"
-              style={{ color: "white", borderBottom: "1px solid white" }}
-            >
-              Explore Projects
-            </Button>
-          </div>
-        </Col>
-      </Row>
+        
+            <Col span={13} className={styles.aboutTitle}>
+              <h2>Passion in every work</h2>
+              <p>
+                We are deeply passionate about creating beautiful, sustainable
+                green landscapes for our clients.
+              </p>
+
+              <h2>Collaboration on top</h2>
+              <p>
+                We make your dream design come true by combining your ideas with
+                our landscape design expertise.
+              </p>
+
+              <h2>Sustainability in check</h2>
+              <p>
+                We love nurturing nature, one garden at a time, so that you can
+                enjoy the beautiful landscape of our garden even longer.
+              </p>
+
+              <h2>Creativity unleashed</h2>
+              <p>
+                We make sure to only give you our innovative designs that stand
+                out to make sure that your garden is not like the others.
+              </p>
+
+              <h2>Personalized services</h2>
+              <p>
+              We offer tailored services that honor your dreams, with a flexible approach to bring your ideal garden to life.
+              </p>
+            </Col>
+          </Row>
     </div>
   );
 };
+
+export default ValuesSection;

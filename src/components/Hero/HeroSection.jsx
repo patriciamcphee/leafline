@@ -9,10 +9,11 @@ const HeroSection = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const navigationItems = [
-    { key: "about", label: "ABOUT" },
-    { key: "services", label: "SERVICES" },
-    { key: "projects", label: "PROJECTS" },
-    { key: "contact", label: "CONTACT" },
+    { key: "about", label: "ABOUT", url: "#about" },
+    { key: "services", label: "SERVICES", url: "#services" },
+    { key: "projects", label: "PROJECTS", url: "/projects" },
+    { key: "faqs", label: "FAQs", url: "#faqs" },
+    { key: "contact", label: "CONTACT", url: "/contact" },
   ];
 
   return (
@@ -30,7 +31,7 @@ const HeroSection = () => {
         <Col xs={18} sm={12} md={8}>
           <img
             style={{ 
-              maxWidth: "100%", 
+              maxWidth: "60%", 
               height: "auto", 
               objectFit: "cover" 
             }}
@@ -41,11 +42,15 @@ const HeroSection = () => {
         
         {/* Desktop Navigation */}
         <Col xs={0} md={16}>
-          <Row justify="end" style={{ gap: "48px" }}>
+          <Row justify="end" className={styles.navbar}>
             {navigationItems.map(item => (
-              <div key={item.key} style={{ color: "white" }}>
+              <a 
+                href={item.url} 
+                key={item.key}
+                className={styles.navLink}
+              >
                 {item.label}
-              </div>
+              </a>
             ))}
           </Row>
         </Col>
@@ -84,84 +89,30 @@ const HeroSection = () => {
       >
         <Col xs={24} md={12}>
           <div style={{ marginBottom: "40px" }}>
-            <div style={{ color: "white" }}>CREATE YOUR</div>
-            <p style={{ color: "transparent", margin: "8px 0" }}>
-              <span style={{ color: "#e1ebe2" }}>DREAM</span>
+            <div className={styles.dreamGarden}>CREATE YOUR</div>
+            <p className={styles.dreamGarden}>
+              <span style={{ color: "#e1ebe2", fontWeight: '800' }}>DREAM</span>
               <span style={{ color: "#f9faf3" }}> GARDEN</span>
             </p>
-            <p style={{ color: "white", opacity: 0.75 }}>
-              Crafting dream gardens with passion, creativity, and
-              sustainability for over a decade with our experienced landscape
-              artists and gardener teams.
+            <p className={styles.craftingDream}>
+              Crafting dream gardens with passion, creativity, and sustainability for nearly a decade with our experienced landscape artists and gardener teams.
             </p>
           </div>
 
-          <Row style={{ gap: "22px", marginBottom: "40px" }}>
+          <Row style={{ gap: "22px", marginBottom: "40px", marginLeft: "20px" }}>
             <Button
-              type="primary"
-              style={{ backgroundColor: "white", color: "dark-green" }}
+              type="default"
+              className={styles.primaryButton}
             >
               Get Started
             </Button>
             <Button
               type="link"
-              style={{ color: "white", borderBottom: "1px solid white" }}
+              className={styles.secondaryButton}
             >
               Explore Projects
             </Button>
           </Row>
-
-          <div>
-            <Row justify="space-between" style={{ marginBottom: "10px" }}>
-              <div style={{ color: "white" }}>01</div>
-              <div style={{ color: "white" }}>03</div>
-            </Row>
-            <Row>
-              <div
-                style={{
-                  width: "25%",
-                  height: "1px",
-                  backgroundColor: "white",
-                }}
-              />
-              <div
-                style={{
-                  width: "75%",
-                  height: "1px",
-                  backgroundColor: "white",
-                  opacity: 0.5,
-                }}
-              />
-            </Row>
-          </div>
-        </Col>
-
-        <Col xs={24} md={12} style={{ marginTop: { xs: '40px', md: '0' } }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "end",
-              gap: "60px",
-              padding: "20px",
-              borderRadius: "20px",
-              border: "1px solid rgba(255, 255, 255, 0.2)",
-              backdropFilter: "blur(10px) brightness(100%)",
-              background:
-                "linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%)",
-            }}
-          >
-            <img alt="Icon button" src="../../../static/img/icon-button.svg" />
-            <div>
-              <div style={{ color: "white", marginBottom: "8px" }}>
-                Hachioji Garden
-              </div>
-              <p style={{ color: "white", opacity: 0.75, margin: 0 }}>
-                We design Hachioji Garden as a part of our new Landscape Design
-                Commission in the country.
-              </p>
-            </div>
-          </div>
         </Col>
       </Row>
     </div>
