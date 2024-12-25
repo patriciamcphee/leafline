@@ -3,16 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero.js';
-import AboutUs from './components/AboutUs/AboutUs.js';
-import OurServices from './components/OurServices/OurServices.js';
-import LetsConnect from './components/LetsConnect/LetsConnect.js';
-import MyFooter from './components/Footer/Footer.js';
-import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
-import FaqSection from './components/CollapsibleFAQ/CollapsibleFAQ.js';
-import BeforeAfterGallery from './components/BeforeAfterGallery/BeforeAfterGallery.jsx';
+import HeroSection from './components/Hero/HeroSection.jsx';
 
-import { Divider, ConfigProvider } from 'antd';
+import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
+
+import { ConfigProvider } from 'antd';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,17 +24,8 @@ root.render(
   <React.StrictMode>
     <BackToTopButton />
     <Navbar />
-    <Hero />
-    <AboutUs />
-    <Divider />
-    <OurServices />
-    <Divider />
-    <BeforeAfterGallery />
-    <Divider />
-    <LetsConnect />
-    <Divider />
-    <FaqSection />
-    <MyFooter />
+    <HeroSection />
+
     
   </React.StrictMode>
   </ConfigProvider>

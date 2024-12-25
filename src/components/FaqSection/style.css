@@ -1,0 +1,96 @@
+.FAQ-section {
+  align-items: flex-start;
+  background-color: var(--light-green);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 100px 80px;
+  position: relative;
+}
+
+.FAQ-section .title {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 445px;
+  position: relative;
+}
+
+.FAQ-section .FREQUENTLY-ASKED {
+  color: transparent;
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-2-font-size);
+  font-style: var(--heading-2-font-style);
+  font-weight: var(--heading-2-font-weight);
+  letter-spacing: var(--heading-2-letter-spacing);
+  line-height: var(--heading-2-line-height);
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.FAQ-section .span {
+  color: #374836;
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-2-font-size);
+  font-style: var(--heading-2-font-style);
+  font-weight: var(--heading-2-font-weight);
+  letter-spacing: var(--heading-2-letter-spacing);
+  line-height: var(--heading-2-line-height);
+}
+
+.FAQ-section .text-wrapper-2 {
+  color: #7f8f80;
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-2-font-size);
+  font-style: var(--heading-2-font-style);
+  font-weight: var(--heading-2-font-weight);
+  letter-spacing: var(--heading-2-letter-spacing);
+  line-height: var(--heading-2-line-height);
+}
+
+.FAQ-section .f-a-q {
+  color: var(--dark-green);
+  font-family: var(--heading-7-font-family);
+  font-size: var(--heading-7-font-size);
+  font-style: var(--heading-7-font-style);
+  font-weight: var(--heading-7-font-weight);
+  letter-spacing: var(--heading-7-letter-spacing);
+  line-height: var(--heading-7-line-height);
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.FAQ-section .contents {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 64px;
+  position: relative;
+}
+
+.FAQ-section .left-content {
+  background-image: url(../../../static/img/left-content.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 20px;
+  height: 368px;
+  position: relative;
+  width: 431px;
+}
+
+.FAQ-section .items {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.FAQ-section .list-instance {
+  flex: 0 0 auto !important;
+}
