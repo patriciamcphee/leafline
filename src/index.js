@@ -5,7 +5,10 @@ import reportWebVitals from './reportWebVitals';
 import HeroSection from './components/Hero/HeroSection.jsx';
 import AboutSection from './components/AboutSection/AboutSection.jsx';
 import ServicesSection from './components/ServicesSection/ServicesSection.jsx';
-import PhotoFooterSection from './components/PhotoFooterSection/PhotoFooterSection.jsx';
+import HowItWorksSection from './components/HowItWorksSection/HowItWorksSection.jsx';
+import OurWorkSection from './components/OurWorkSection/OurWorkSection.jsx';
+import CtaSection from './components/CtaButton/CtaButton.jsx';
+import FooterSection from './components/FooterSection/FooterSection.jsx';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
 
 import { ConfigProvider } from 'antd';
@@ -27,7 +30,10 @@ root.render(
     <HeroSection />
     <AboutSection />
     <ServicesSection />
-    <PhotoFooterSection />
+    <HowItWorksSection />
+    <OurWorkSection />
+    <CtaSection />
+    <FooterSection />
   </React.StrictMode>
   </ConfigProvider>
 );

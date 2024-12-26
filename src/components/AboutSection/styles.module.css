@@ -1,50 +1,124 @@
-.sectionTitleLeft {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 20px 0;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
 
+.aboutSection {
+  background-color: #F4F1DE;
+  padding: 60px;
 }
 
-.sectionTitleLeft h5 {
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h5 {
   color: #286655;
-  margin: 0;
-  font-family: "Plus Jakarta Sans", serif;
-}
-
-.crafting h1 {
-  margin: 40px 0;
-  color: #28665556;
-  font-family: "Plus Jakarta Sans", serif;
-  font-size: 80px;
-  font-weight: 600;
-  line-height: 76px;
-
-}
-
-.crafting h3 {
-  margin: 40px 0;
   font-family: "Plus Jakarta Sans", serif;
   font-size: 16px;
+  margin: 0;
   font-weight: 500;
 }
 
-.crafting span {
+.content {
+  display: grid;
+  grid-template-columns: minmax(300px, 2fr) 3fr;
+  gap: 60px;
+}
+
+.intro h1 {
+  color: #28665556;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: clamp(40px, 5vw, 80px);
+  font-weight: 600;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.intro span {
   color: #286655;
 }
 
-.aboutTitle h2 {
+.intro h3 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 40px 0;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature h2 {
   font-family: "Plus Jakarta Sans", serif;
   color: #286655;
   font-size: 28px;
   font-weight: 600;
-  margin-top: 30px;
-  margin-bottom: 1px;
+  margin: 0 0 4px;
 }
 
-.aboutTitle p {
+.feature p {
   font-family: "Plus Jakarta Sans", serif;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 4px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    gap: 40px;
+  }
+
+  .feature h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 40px 0 60px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+
+  .intro h3 {
+    margin: 20px 0;
+  }
+
+  .features {
+    gap: 15px;
+  }
+
+  .feature h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .feature h2 {
+    font-size: 20px;
+  }
 }

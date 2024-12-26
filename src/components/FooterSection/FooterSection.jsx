@@ -1,92 +1,54 @@
 import React from "react";
 import styles from "./styles.module.css";
+import ColorLogo from "../../img/logo-color.svg";
 
 const FooterSection = () => {
   return (
-    <div className="footer-section">
-      <div className="contents">
-        <div className="company-logo-text">
-          <div className="div">
+    <div className={styles.wrapper}>
+      <footer className={styles.footerSection}>
+        <div className={styles.contents}>
+          <div className={styles.logoSection}>
             <img
-              className="logo-color"
-              alt="Logo color"
-              src="/img/logo-color-1.png"
+              className={styles.logo}
+              alt="Company Logo"
+              src={ColorLogo}
             />
-
-            <div className="text">
-              <p className="stay-updated-with">
-                Stay updated with our latest
-                <br />
-                projects and gardening tips.
-              </p>
-            </div>
           </div>
 
-          <div className="newsletter-email">
-            <div className="contents-2">
-              <p className="text-wrapper">Enter your email address ...</p>
-
-              <img
-                className="arrow-icon"
-                alt="Arrow icon"
-                src="/img/arrow-icon.svg"
-              />
+          <div className={styles.menuContainer}>
+            <div className={styles.menuColumn}>
+              <h3 className={styles.menuTitle}>LINKS</h3>
+              <nav className={styles.menuItems}>
+                <a href="#about">ABOUT US</a>
+                <a href="#services">SERVICES</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#faqs">FAQs</a>
+              </nav>
             </div>
-          </div>
-        </div>
 
-        <div className="menu">
-          <div className="div-2">
-            <div className="text-wrapper-2">SUPPORT</div>
-
-            <div className="items">
-              <div className="text-wrapper-3">FAQ</div>
-
-              <div className="text-wrapper-4">USER GUIDE</div>
-
-              <div className="text-wrapper-4">TESTIMONIAL</div>
-
-              <div className="text-wrapper-4">CUSTOMER</div>
-            </div>
-          </div>
-
-          <div className="div-2">
-            <div className="text-wrapper-2">LINKS</div>
-
-            <div className="items">
-              <div className="text-wrapper-3">ABOUT US</div>
-
-              <div className="text-wrapper-4">STORIES</div>
-
-              <div className="text-wrapper-4">PROJECTS</div>
-
-              <div className="text-wrapper-4">BLOG</div>
-            </div>
-          </div>
-
-          <div className="div-2">
-            <div className="text-wrapper-2">SERVICES</div>
-
-            <div className="items">
-              <div className="text-wrapper-3">HOME GARDEN</div>
-
-              <div className="text-wrapper-4">PLANT SELECTION</div>
-
-              <div className="text-wrapper-4">HARDSCAPING</div>
-
-              <div className="text-wrapper-4">PUBLIC GARDEN</div>
+            <div className={styles.menuColumn}>
+              <h3 className={styles.menuTitle}>SERVICES</h3>
+              <nav className={styles.menuItems}>
+                <a href="#landscape">LANDSCAPE DESIGN</a>
+                <a href="#home-garden">HOME GARDEN</a>
+                <a href="#plant">PLANT SELECTION</a>
+                <a href="#public">PUBLIC GARDEN</a>
+              </nav>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="copyright">
-        <p className="p">COURTESY © 2023. ALL RIGHTS RESERVED.</p>
-
-        <p className="PRIVACY-POLICY-TERMS">
-          PRIVACY POLICY&nbsp;&nbsp; |&nbsp;&nbsp; TERMS &amp; CONDITION
-        </p>
-      </div>
+        <div className={styles.copyright}>
+          <p className={styles.copyrightText}>
+            COPYRIGHT © 2025. ALL RIGHTS RESERVED.
+          </p>
+          <div className={styles.legalLinks}>
+            <a href="#privacy">PRIVACY POLICY</a>
+            <span className={styles.separator}>|</span>
+            <a href="#terms">TERMS & CONDITIONS</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -1,17 +1,24 @@
 import React from "react";
-import { Button } from "../../components/Button";
-import "./style.css";
+import styles from "./styles.module.css";
 
-export const CtaButton = () => {
+const CtaSection = () => {
   return (
-    <div className="CTA-button">
-      <div className="READY-TO-TRANSFORM">
-        READY TO TRANSFORM
-        <br />
-        YOUR GARDEN?
-      </div>
-
-      <Button className="button-instance" property1="ver-1" text="Contact Us" />
-    </div>
+    <section className={styles.ctaSection}>
+      <div className={styles.container}>
+        <div  className={styles.content}>
+              <div className={styles.intro}>
+                <h1>READY TO TRANSFORM YOUR GARDEN?
+                </h1>
+                </div>
+                </div>
+</div>
+      <div className={styles.buttonGroup}>
+                  <button className={styles.primaryButton}>
+                    Get Started
+                  </button>
+                </div>
+    </section>
   );
 };
+
+export default CtaSection;

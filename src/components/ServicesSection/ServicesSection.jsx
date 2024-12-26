@@ -1,169 +1,86 @@
-import { ArrowRightOutlined } from "@ant-design/icons";
-import { Button, Col, Row, Typography } from "antd";
 import React from "react";
-import styles from './styles.module.css';
-
-const { Title, Paragraph } = Typography;
+import styles from "./styles.module.css";
 
 const ServicesSection = () => {
+  const services = [
+    {
+      title: "HOME\nGARDEN",
+      description: "Crafting the perfect garden space for your home. Whether indoor or outdoor, we got it all ready for your greenery needs.",
+      image: "/img/item-1-activated.png",
+      tags: ["Home", "Garden", "Landscape Design", "Expert"],
+      featured: true
+    },
+    {
+      title: "PLANT\nSELECTION",
+      description: "Hand-picked greenery for your oasis.",
+      image: "/img/card.png",
+      arrowImage: "/img/arrow.svg"
+    },
+    {
+      title: "HARD-\nSCAPING",
+      description: "Adding structure to your garden landscape.",
+      image: "/img/card-1.png",
+      arrowImage: "/img/arrow-2.svg"
+    },
+    {
+      title: "PUBLIC\nGARDEN",
+      description: "Expert advice for public garden and city parks.",
+      image: "/img/card-2.png",
+      arrowImage: "/img/arrow-2.svg"
+    }
+  ];
+
   return (
-    <div style={{ padding: "40px 40px 100px 40px", backgroundColor: "#286655" }}>
-      <Row
-        justify="space-between"
-        style={{ marginBottom: "16px" }}
-      >
-        <Col className={styles.sectionTitleRight}>
-          <Title level={5} id="services"> 
-            [&nbsp;&nbsp;&nbsp;&nbsp;SERVICES&nbsp;&nbsp;&nbsp;&nbsp;]
-          </Title>
-        </Col>
-      </Row>
+    <section className={styles.servicesSection}>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <h5 id="services">[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SERVICES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</h5>
+        </div>
 
-      <Row gutter={16}>
-        <Col span={6}>
-          <div
-            style={{
-              height: "740px",
-              padding: "32px",
-              borderRadius: "20px",
-              backgroundImage: "url(/img/item-1-activated.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <Row gutter={16} style={{ marginBottom: "298px" }}>
-              <Col>
-                <Button
-                  shape="round"
-                  style={{
-                    marginRight: "8px",
-                    borderColor: "#fff",
-                    color: "#286655",
-                  }}
-                >
-                  Home
-                </Button>
-                <Button
-                  shape="round"
-                  style={{ borderColor: "#fff", color: "#286655" }}
-                >
-                  Garden
-                </Button>
-              </Col>
-              <Col>
-                <Button
-                  shape="round"
-                  style={{
-                    marginRight: "8px",
-                    borderColor: "#fff",
-                    color: "#286655",
-                  }}
-                >
-                  Landscape Design
-                </Button>
-                <Button
-                  shape="round"
-                  style={{ borderColor: "#fff", color: "#286655" }}
-                >
-                  Expert
-                </Button>
-              </Col>
-              <Col>
-                <ArrowRightOutlined
-                  style={{ fontSize: "24px", color: "#fff" }}
-                />
-              </Col>
-            </Row>
-            <div>
-              <Title level={1} style={{ color: "#fff" }}>
-                HOME
-                <br />
-                GARDEN
-              </Title>
-              <Paragraph style={{ color: "#fff", width: "434px" }}>
-                Crafting the perfect garden space for your home. Whether indoor
-                or outdoor, we got it all ready for your greenery needs.
-              </Paragraph>
+        <div className={styles.servicesGrid}>
+          {services.map((service, index) => (
+            <div 
+              key={index} 
+              className={`${styles.serviceCard} ${service.featured ? styles.featuredCard : ''}`}
+              style={{ backgroundImage: `url(${service.image})` }}
+            >
+              {service.featured ? (
+                <>
+                  <div className={styles.tags}>
+                    <div className={styles.tagGroup}>
+                      {service.tags.map((tag, tagIndex) => (
+                        <button key={tagIndex} className={styles.tag}>
+                          {tag}
+                        </button>
+                      ))}
+                    </div>
+                    <span className={styles.arrow}>→</span>
+                  </div>
+                  <div className={styles.cardContent}>
+                    <h2>{service.title}</h2>
+                    <p>{service.description}</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {service.arrowImage && (
+                    <img 
+                      src={service.arrowImage} 
+                      alt="Direction arrow" 
+                      className={styles.arrowImage}
+                    />
+                  )}
+                  <div className={styles.cardContent}>
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+                </>
+              )}
             </div>
-          </div>
-        </Col>
-
-        <Col span={6}>
-          <div
-            style={{
-              height: "740px",
-              padding: "16px 24px",
-              borderRadius: "20px",
-              backgroundImage: "url(/img/card.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <img src="/img/arrow.svg" alt="Arrow" style={{ width: "100%" }} />
-            <div style={{ marginTop: "auto" }}>
-              <Title level={3} style={{ color: "#fff" }}>
-                PLANT
-                <br />
-                SELECTION
-              </Title>
-              <Paragraph style={{ color: "#fff" }}>
-                Hand-picked greenery for your oasis.
-              </Paragraph>
-            </div>
-          </div>
-        </Col>
-
-        <Col span={6}>
-          <div
-            style={{
-              height: "740px",
-              padding: "16px 24px",
-              borderRadius: "20px",
-              backgroundImage: "url(/img/card-1.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <img src="/img/arrow-2.svg" alt="Arrow" style={{ width: "100%" }} />
-            <div style={{ marginTop: "auto" }}>
-              <Title level={3} style={{ color: "#fff" }}>
-                HARD-
-                <br />
-                SCAPING
-              </Title>
-              <Paragraph style={{ color: "#fff" }}>
-                Adding structure to your garden landscape.
-              </Paragraph>
-            </div>
-          </div>
-        </Col>
-
-        <Col span={6}>
-          <div
-            style={{
-              height: "740px",
-              padding: "16px 24px",
-              borderRadius: "20px",
-              backgroundImage: "url(/img/card-2.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <img src="/img/arrow-2.svg" alt="Arrow" style={{ width: "100%" }} />
-            <div style={{ marginTop: "auto" }}>
-              <Title level={3} style={{ color: "#fff" }}>
-                PUBLIC
-                <br />
-                GARDEN
-              </Title>
-              <Paragraph style={{ color: "#fff" }}>
-                Expert advice for public garden and city parks.
-              </Paragraph>
-            </div>
-          </div>
-        </Col>
-      </Row>
-    </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

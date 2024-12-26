@@ -1,0 +1,120 @@
+.ctaSection {
+  background-color: #F4F1DE;
+  padding: 60px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../img/ctaSectionImage.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(300px, 2fr) 3fr;
+  gap: 60px;
+}
+
+.intro h1 {
+  color: #e1ebe2;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: clamp(40px, 5vw, 80px);
+  font-weight: 600;
+  line-height: 1;
+  margin: 60px 0;
+}
+
+.intro span {
+  color: #286655;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 22px;
+  margin: 20px;
+}
+
+.primaryButton {
+  background: white;
+  color: #2E5D4B;
+  border: none;
+  padding: 12px 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.primaryButton:hover {
+  background: #f0f0f0;
+}
+
+.secondaryButton {
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 12px 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    gap: 40px;
+  }
+
+  .feature h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaSection {
+    padding: 40px 0 60px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .intro h1 {
+    font-size: 32px;
+  }
+
+}

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+.timelineSec {
+  background-color: #F4F1DE;
+  padding: 60px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.intro h1 {
+  color: #28665556;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: clamp(40px, 5vw, 80px);
+  font-weight: 600;
+  line-height: 1;
+  margin: 60px 0;
+}
+
+.intro span {
+  color: #286655;
+}
+
+.title {
+  color: #286655;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.timelineContainer {
+  position: relative;
+  padding: 80px;
+}
+
+.timeline {
+  margin: 120px 0;
+  padding: 0;
+  border-top: 2px solid #286655;
+  list-style: none;
+  position: relative;
+}
+
+.timeline:before,
+.timeline:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #286655;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+}
+
+.timeline:before { left: 0; }
+.timeline:after { right: 0; }
+
+.timeline li {
+  float: left;
+  width: 25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.numberTop,
+.numberBot {
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  background: #286655;
+  border: 4px solid #286655;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", serif;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  z-index: 1;
+}
+
+.numberTop:before,
+.numberBot:before {
+  content: '';
+  width: 2px;
+  height: 50px;
+  background: #286655;
+  position: absolute;
+  left: 50%;
+}
+
+.numberTop:before { top: -50px; }
+.numberBot:before { bottom: -50px; }
+
+.numberTop:after,
+.numberBot:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #286655;
+  border-radius: 50%;
+  position: absolute;
+  left: 44%;
+}
+
+.numberTop:after { bottom: 100px; }
+.numberBot:after { top: 100px; }
+
+.handlerTop,
+.handlerBot {
+  position: absolute;
+  width: 100%;
+}
+
+.handlerTop {
+  bottom: 0;
+  margin-bottom: 130px;
+}
+
+.handlerBot {
+  margin-top: 60px;
+}
+
+.stepTitle {
+  color: #286655;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  text-align: center;
+}
+
+.handlerTop p,
+.handlerBot p {
+  color: #286655;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.7;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .timelineSec {
+    padding: 40px;
+  }
+  
+  .handlerTop p,
+  .handlerBot p {
+    width: 90%;
+  }
+
+  /* Hide the numbered circles but keep the timeline */
+  .numberTop,
+  .numberBot {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .timelineSec {
+    padding: 30px 20px;
+  }
+
+  .timelineContainer {
+    padding: 0px 0 30px 0;
+  }
+
+  .timeline {
+    margin: 0;
+    padding: 0px 0;
+    border-top: none;
+    border-left: none;
+  }
+
+  .timeline:before,
+  .timeline:after {
+    display: none;
+  }
+
+  .timeline li {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .timeline li:last-child {
+    margin-bottom: 0;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+
+  .handlerTop,
+  .handlerBot {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+
+  .stepTitle,
+  .handlerTop p,
+  .handlerBot p {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timelineSec {
+    padding: 30px 15px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .stepTitle {
+    font-size: 18px;
+  }
+
+  .handlerTop p,
+  .handlerBot p {
+    font-size: 14px;
+  }
+}
