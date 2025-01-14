@@ -7,28 +7,27 @@ const { Panel } = Collapse;
 
 export const FaqSection = () => {
   return (
-    <div style={{ padding: "100px 20px", backgroundColor: "#E6F7E6" }}>
+    <div style={{ padding: "60px 60px", backgroundColor: "#F4F1DE" }}>
       <Row gutter={[16, 16]}>
         <Col span={24}>
           <Row justify="space-between" align="top">
             <Col>
-              <Title level={2} style={{ color: "#374836" }}>
+              <Title level={1} style={{ color: "#28665556", fontSize: '64px', lineHeight: '1' }}>
                 FREQUENTLY
                 <br />
-                <span style={{ color: "#7f8f80" }}>ASKED</span>
+                <span style={{ color: "#286655" }}>ASKED</span>
                 <br />
-                <span style={{ color: "#374836" }}>QUESTIONS</span>
+                <span style={{ color: "#28665556" }}>QUESTIONS</span>
               </Title>
             </Col>
             <Col>
               <Text
                 style={{
-                  fontSize: "var(--heading-7-font-size)",
-                  color: "#374836",
-                  fontWeight: "var(--heading-7-font-weight)",
+                  fontSize: "16px",
+                  color: "#286655",
                 }}
               >
-                [&nbsp;&nbsp;&nbsp;&nbsp;F.A.Q&nbsp;&nbsp;&nbsp;&nbsp;]
+                [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F.A.Q.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
               </Text>
             </Col>
           </Row>
@@ -40,7 +39,7 @@ export const FaqSection = () => {
               <Image
                 width={431}
                 height={368}
-                src="/img/left-content.png"
+                src="/images/landscape-design-1.jpeg"
                 preview={false}
                 style={{ borderRadius: "20px" }}
               />

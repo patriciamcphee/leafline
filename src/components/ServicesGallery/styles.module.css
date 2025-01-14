@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
+.servicesSectionHeader {
+  background-color: #286655;
+  padding: 60px 0px 100px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.header h5 {
+  color: #e1ebe2;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.container {
+  background: #286655;
+  padding: 0px 80px;
+}
+
+.serviceSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 0px;
+}
+
+.contentArea {
+  flex: 0 0 65%; /* Increase from 50% to 65% */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionImage {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  margin-bottom: -40px;
+}
+
+.sectionTitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+.titleLight {
+  color: white;
+  font-weight: 800;
+}
+
+.titleDark {
+  color: #e1ebe2;
+  font-weight: 300;
+}
+
+.description {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.cardsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 30%; /* Take up remaining space, but no more than 35% */
+}
+
+.card {
+  background: #F3F4F6;
+  border-radius: 12px;
+  padding: 0px;
+  width: 100%;
+}
+
+.cardIcon {
+  color: #286655;
+  margin-bottom: -10px;
+}
+
+.cardTitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  color: #1F2937;
+}
+
+.cardDescription {
+  color: #4B5563;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.tagGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 80%;
+}
+
+.tag {
+  background-color: white;
+  color: #286655;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 10px 40px;
+  }
+
+  .serviceSection {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contentArea {
+    flex: 1;
+    width: 100%;
+  }
+
+  .cardsGrid {
+    width: 100%;
+    flex: 1;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+
+  .sectionTitle {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header {
+    justify-content: right;
+    margin-bottom: 40px;
+  }
+
+  .tagGroup {
+    max-width: 100%;
+    justify-content: center;
+    margin-bottom: -16px;
+  }
+
+  .tags {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceSection {
+    gap: 24px;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .serviceImage {
+    height: 180px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 0;
+  }
+
+  .servicesSectionHeader {
+    padding: 20px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 42px;
+    margin-top: 80px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .serviceImage {
+    height: 120px;
+  }
+
+  .card {
+    padding: 0px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .cardDescription {
+    font-size: 13px;
+  }
+
+  .tag {
+    font-size: 13px;
+    padding: 4px 10px;
+  }
+}

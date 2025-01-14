@@ -4,12 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import HeroSection from './components/Hero/HeroSection.jsx';
 import AboutSection from './components/AboutSection/AboutSection.jsx';
-import ServicesSection from './components/ServicesSection/ServicesSection.jsx';
 import HowItWorksSection from './components/HowItWorksSection/HowItWorksSection.jsx';
 import OurWorkSection from './components/OurWorkSection/OurWorkSection.jsx';
 import CtaSection from './components/CtaButton/CtaButton.jsx';
 import FooterSection from './components/FooterSection/FooterSection.jsx';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
+import ServicesGallery from './components/ServicesGallery/ServicesGallery.jsx';
+import { FaqSection } from './components/FaqSection/FaqSection.jsx';
 
 import { ConfigProvider } from 'antd';
 
@@ -29,9 +30,10 @@ root.render(
     <BackToTopButton />
     <HeroSection />
     <AboutSection />
-    <ServicesSection />
+    <ServicesGallery />
     <HowItWorksSection />
     <OurWorkSection />
+    <FaqSection />
     <CtaSection />
     <FooterSection />
   </React.StrictMode>

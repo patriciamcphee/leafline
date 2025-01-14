@@ -1,6 +1,6 @@
 .FAQ-section {
   align-items: flex-start;
-  background-color: var(--light-green);
+  background-color: #F4F1DE;
   display: inline-flex;
   flex-direction: column;
   gap: 64px;
@@ -73,7 +73,6 @@
 }
 
 .FAQ-section .left-content {
-  background-image: url(../../../static/img/left-content.png);
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 20px;
