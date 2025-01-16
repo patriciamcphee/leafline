@@ -142,7 +142,7 @@ const ServicesGallery = () => {
             title="GARDEN DESIGN"
             description="Transform your outdoor space with our Garden Design service. Our landscape architects and horticultural experts carefully craft designs that blend artistry with science to create captivating spaces. We consider every aspect of your property—from sustainable native plants to innovative hardscaping—to bring your vision to life. Whether you envision a peaceful meditation garden, a lively entertainment area, or a beautiful edible landscape, our designs harmonize with the natural environment while fulfilling your unique needs."
             services={gardenDesignServices}
-            imageSrc="/images/landscape-design.jpeg"
+            imageSrc="/images/landscape-design-5.jpeg"
           />
         );
       case 'fine-pruning':

@@ -10,7 +10,6 @@ import CtaSection from './components/CtaButton/CtaButton.jsx';
 import FooterSection from './components/FooterSection/FooterSection.jsx';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
 import ServicesGallery from './components/ServicesGallery/ServicesGallery.jsx';
-import { FaqSection } from './components/FaqSection/FaqSection.jsx';
 
 import { ConfigProvider } from 'antd';
 
@@ -33,7 +32,7 @@ root.render(
     <ServicesGallery />
     <HowItWorksSection />
     <OurWorkSection />
-    <FaqSection />
+
     <CtaSection />
     <FooterSection />
   </React.StrictMode>
