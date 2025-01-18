@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button, ConfigProvider } from 'antd';
 import styles from "./styles.module.css";
 import WhiteLogo from "../../img/logo-white.svg";
 
@@ -73,9 +74,19 @@ const HeroSection = () => {
           </div>
 
           <div className={styles.buttonGroup}>
-            <button className={styles.primaryButton} href="/landscape-request.html" target="_blank">
-              Get a Consultation
-            </button>
+          <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: '#286655',
+            colorPrimaryHover: '#A2C523',
+            paddingBlockLG: '10',
+          },
+        }}
+      >
+        <Button type="primary" shape="round" size="large"  className={styles.primaryButton} href="landscape-request.html" target="_blank">
+          <b>Get a Consultation</b>
+        </Button>
+      </ConfigProvider>
             <p className={styles.secondaryButton}>
             (206) 880-0886
             </p>

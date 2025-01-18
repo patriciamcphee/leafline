@@ -1,4 +1,5 @@
 import React from "react";
+import { Button, ConfigProvider } from 'antd';
 import styles from "./styles.module.css";
 
 const CtaSection = () => {
@@ -13,9 +14,19 @@ const CtaSection = () => {
                 </div>
 </div>
       <div className={styles.buttonGroup}>
-                  <button className={styles.primaryButton} href="/landscape-request.html" target="_blank">
-                    Get a Consultation
-                  </button>
+          <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: '#286655',
+            colorPrimaryHover: '#A2C523',
+            paddingBlockLG: '10',
+          },
+        }}
+      >
+        <Button type="primary" shape="round" size="large"  className={styles.primaryButton} href="landscape-request.html" target="_blank">
+          <b>Get a Consultation</b>
+        </Button>
+      </ConfigProvider>
                 </div>
     </section>
   );

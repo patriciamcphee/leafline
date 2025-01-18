@@ -1,6 +1,6 @@
 .ctaSection {
   background-color: #F4F1DE;
-  padding: 60px 40px;
+  padding: 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../../static/images/landscape-design-7.jpeg);
   background-position: center;
   background-size: cover;
@@ -22,7 +22,7 @@
   font-size: clamp(72px, 3vw, 60px);
   font-weight: 800;
   line-height: 1;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 .intro span {
@@ -32,17 +32,18 @@
 .buttonGroup {
   display: flex;
   gap: 22px;
-  margin: 20px 60px;
+  margin: 20px 40px;
+  align-items: center;
 }
 
 .primaryButton {
   background: white;
+  text-decoration: none;
   color: #2E5D4B;
   border: none;
-  padding: 12px 32px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s;

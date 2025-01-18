@@ -115,13 +115,14 @@
   display: flex;
   gap: 22px;
   margin-top: 40px;
+  align-items: center;
 }
 
 .primaryButton {
   background: white;
+  text-decoration: none;
   color: #2E5D4B;
   border: none;
-  padding: 12px 32px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -138,7 +139,6 @@
   background: none;
   color: white;
   border: none;
-  border-bottom: 1px solid white;
   padding: 12px 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
