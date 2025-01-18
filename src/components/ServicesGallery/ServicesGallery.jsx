@@ -38,11 +38,6 @@ const gardenDesignServices = [
 
 const pruningServices = [
   {
-    title: "Artistic Pruning",
-    icon: <Scissors className="w-12 h-12" />,
-    description: "Expert shaping and maintenance of ornamental trees and shrubs"
-  },
-  {
     title: "Health Management",
     icon: <Sprout className="w-12 h-12" />,
     description: "Strategic pruning to promote plant health and growth"
@@ -56,6 +51,11 @@ const pruningServices = [
     title: "Structural Pruning",
     icon: <Wand2 className="w-12 h-12" />,
     description: "Ensuring proper growth patterns and branch structure"
+  },
+  {
+    title: "Artistic Pruning",
+    icon: <Scissors className="w-12 h-12" />,
+    description: "Expert shaping and maintenance of ornamental trees and shrubs"
   }
 ];
 

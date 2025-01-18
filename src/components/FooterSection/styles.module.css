@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
 .wrapper {
   width: 100%;
   max-width: 100%;
@@ -6,16 +8,16 @@
 
 .footerSection {
   background-color: #F4F1DE;
-  padding: 60px;
+  padding: 40px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .contents {
-  margin: 0 auto;
+  margin: 0 40px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .logoSection {
@@ -31,8 +33,10 @@
 }
 
 .menuContainer {
+  font-family: "Plus Jakarta Sans", sans-serif;
   display: flex;
-  gap: 72px;
+  gap: 84px;
+  margin-top: 40px;
 }
 
 .menuColumn {
@@ -42,16 +46,27 @@
 }
 
 .menuTitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--dark-green);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 800;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .menuItems {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.menuItems p {
+  color: var(--dark-green);
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+  margin: 0;
 }
 
 .menuItems a {
@@ -67,7 +82,8 @@
 }
 
 .copyright {
-  margin: 0 auto;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,24 +120,91 @@
   opacity: 0.75;
 }
 
+/* Tablet Layout */
+@media (max-width: 1024px) {
+  .footerSection {
+    padding: 20px;
+  }
+
+  .contents {
+    font-size: 14px;
+    margin: 0 20px;
+    gap: 40px;
+  }
+
+  .menuContainer {
+    gap: 40px;
+  }
+
+  .copyright {
+    margin: 20px;
+  }
+}
+
+/* Mobile Layout */
 @media (max-width: 768px) {
   .footerSection {
-    padding: 40px 24px;
+    padding: 40px 20px 20px;
   }
 
   .contents {
     flex-direction: column;
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: 32px;
+    margin: 0;
+    margin-bottom: 32px;
   }
 
   .logoSection {
-    max-width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .menuContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px 40px;
+    margin-top: 32px;
+  }
+
+  .menuColumn {
+    flex: 0 1 calc(50% - 20px);
+    min-width: 140px;
+    text-align: left;
+  }
+
+  .menuTitle {
+    font-size: 16px;
+  }
+
+  .menuItems {
+    gap: 8px;
+  }
+
+  .menuItems a,
+  .menuItems p {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Layout */
+@media (max-width: 480px) {
+  .footerSection {
+    padding: 32px 20px 20px;
+  }
+
+  .contents {
+    gap: 24px;
   }
 
   .menuContainer {
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .menuColumn {
+    flex: 1 1 100%;
     text-align: center;
   }
 
@@ -129,6 +212,7 @@
     flex-direction: column;
     gap: 16px;
     text-align: center;
+    margin: 0;
   }
 
   .copyrightText {
@@ -138,6 +222,7 @@
   .legalLinks {
     order: 1;
     flex-direction: column;
+    gap: 12px;
   }
 
   .separator {

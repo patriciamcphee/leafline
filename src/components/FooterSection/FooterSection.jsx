@@ -15,26 +15,38 @@ const FooterSection = () => {
             />
           </div>
 
+          
+
           <div className={styles.menuContainer}>
-            <div className={styles.menuColumn}>
-              <h3 className={styles.menuTitle}>LINKS</h3>
+
+          <div className={styles.menuColumn}>
+              <h3 className={styles.menuTitle}>Contact Us</h3>
               <nav className={styles.menuItems}>
-                <a href="#about">ABOUT US</a>
-                <a href="#services">SERVICES</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#faqs">FAQs</a>
+                <p><b>(206) 880-0886</b></p>
+                <a href="www.leaflinegarden.design">www.leaflinegarden.design</a>
+                <a href="mailto:chris@leaflinegarden.design">chris@leaflinegarden.design</a>
               </nav>
             </div>
 
             <div className={styles.menuColumn}>
               <h3 className={styles.menuTitle}>SERVICES</h3>
               <nav className={styles.menuItems}>
-                <a href="#landscape">LANDSCAPE DESIGN</a>
-                <a href="#home-garden">HOME GARDEN</a>
-                <a href="#plant">PLANT SELECTION</a>
-                <a href="#public">PUBLIC GARDEN</a>
+                <p>LANDSCAPE DESIGN</p>
+                <p>HOME GARDEN</p>
+                <p>PLANT SELECTION</p>
               </nav>
             </div>
+
+            <div className={styles.menuColumn}>
+              <h3 className={styles.menuTitle}>LINKS</h3>
+              <nav className={styles.menuItems}>
+                <a href="#about">ABOUT US</a>
+                <a href="#services">SERVICES</a>
+                <a href="#projects">PROJECTS</a>
+              </nav>
+            </div>
+
+            
           </div>
         </div>
 
@@ -43,6 +55,7 @@ const FooterSection = () => {
             COPYRIGHT © 2025. ALL RIGHTS RESERVED.
           </p>
           <div className={styles.legalLinks}>
+          <p className={styles.copyrightText}>License #: LEAFLGD763C8</p><span className={styles.separator}>|</span>
             <a href="#privacy">PRIVACY POLICY</a>
             <span className={styles.separator}>|</span>
             <a href="#terms">TERMS & CONDITIONS</a>

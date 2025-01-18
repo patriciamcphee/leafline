@@ -13,8 +13,8 @@ const CtaSection = () => {
                 </div>
 </div>
       <div className={styles.buttonGroup}>
-                  <button className={styles.primaryButton}>
-                    Get Started
+                  <button className={styles.primaryButton} href="/landscape-request.html" target="_blank">
+                    Get a Consultation
                   </button>
                 </div>
     </section>

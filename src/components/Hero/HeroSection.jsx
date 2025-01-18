@@ -8,9 +8,8 @@ const HeroSection = () => {
   const navigationItems = [
     { key: "about", label: "ABOUT", url: "#about" },
     { key: "services", label: "SERVICES", url: "#services" },
-    { key: "projects", label: "PROJECTS", url: "/projects" },
-    { key: "faqs", label: "FAQs", url: "#faqs" },
-    { key: "contact", label: "CONTACT", url: "/contact" },
+    { key: "projects", label: "PROJECTS", url: "#projects" },
+    { key: "contact", label: "CONTACT", url: "mailto:chris@leaflinegarden.design" },
   ];
 
   return (
@@ -74,12 +73,12 @@ const HeroSection = () => {
           </div>
 
           <div className={styles.buttonGroup}>
-            <button className={styles.primaryButton}>
-              Get Started
+            <button className={styles.primaryButton} href="/landscape-request.html" target="_blank">
+              Get a Consultation
             </button>
-            <button className={styles.secondaryButton}>
-              Explore Projects
-            </button>
+            <p className={styles.secondaryButton}>
+            (206) 880-0886
+            </p>
           </div>
         </div>
       </div>

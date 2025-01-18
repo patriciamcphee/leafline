@@ -1,13 +1,13 @@
 .ctaSection {
   background-color: #F4F1DE;
-  padding: 60px;
+  padding: 60px 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../../static/images/landscape-design-7.jpeg);
   background-position: center;
   background-size: cover;
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 40px;
 }
 
 .content {
@@ -32,7 +32,7 @@
 .buttonGroup {
   display: flex;
   gap: 22px;
-  margin: 20px;
+  margin: 20px 60px;
 }
 
 .primaryButton {
@@ -71,18 +71,35 @@
 }
 
 @media (max-width: 1024px) {
+  .ctaSection {
+    padding: 40px 20px;
+  }
+
+  .container {
+    margin: 0 20px;
+  }
+
   .content {
+    grid-template-columns: minmax(300px, 1fr) 2fr;
     gap: 40px;
   }
 
-  .feature h2 {
-    font-size: 24px;
+  .buttonGroup {
+    margin: 20px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
   }
 }
 
 @media (max-width: 768px) {
   .ctaSection {
-    padding: 40px;
+    padding: 40px 20px;
+  }
+
+  .container {
+    margin: 0;
   }
 
   .content {
@@ -92,29 +109,44 @@
 
   .intro h1 {
     font-size: 40px;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
   }
 
   .buttonGroup {
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
+    margin: 20px 0;
   }
 
   .primaryButton,
   .secondaryButton {
     width: 100%;
     text-align: center;
+    padding: 16px 24px;
   }
 
+  .secondaryButton {
+    border: 1px solid white;
+    padding: 15px 24px;
+  }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
+  .ctaSection {
+    padding: 30px 20px;
   }
   
   .intro h1 {
     font-size: 32px;
   }
 
+  .buttonGroup {
+    gap: 12px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
 }

@@ -38,8 +38,10 @@ const AboutSection = () => {
               CRAFTING <span>DREAM GARDENS</span> INTO REALITY
             </h1>
             <h3>
-              Led by a passionate horticulture expert from Lake Washington Tech with nearly a decade in the field. We craft your garden with precision and horticultural expertise.
+              Led by a passionate environmental horticulture expert from Lake Washington Institute of Technology with nearly a decade in the field. We craft your garden with precision and horticultural expertise. 
             </h3>
+            <h3>A proud member of the <b><a href="https://www.walp.org/">Washington Association of Landscape Professionals</a></b> (WALP).</h3>
+            <h4>License #: LEAFLGD763C8</h4>
           </div>
 
           <div className={styles.features}>

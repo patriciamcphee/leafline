@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
 
+h4 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #286655;
+}
+
 .aboutSection {
   background-color: #F4F1DE;
   padding: 60px;
@@ -61,6 +68,7 @@
   font-size: 28px;
   font-weight: 600;
   margin: 0 0 4px;
+  text-align: left;
 }
 
 .feature p {
@@ -72,6 +80,10 @@
 }
 
 @media (max-width: 1024px) {
+
+  .aboutSection {
+    padding: 60px 20px;
+  }
   .content {
     gap: 40px;
   }

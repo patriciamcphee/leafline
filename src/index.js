@@ -30,9 +30,9 @@ root.render(
     <HeroSection />
     <AboutSection />
     <ServicesGallery />
-    <HowItWorksSection />
-    <OurWorkSection />
 
+    <OurWorkSection />
+    <HowItWorksSection />
     <CtaSection />
     <FooterSection />
   </React.StrictMode>
