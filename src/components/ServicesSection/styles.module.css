@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+.servicesSection {
+  background-color: #286655;
+  padding: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.header h5 {
+  color: #e1ebe2;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.serviceCard {
+  height: 740px;
+  padding: 24px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featuredCard {
+  padding: 32px;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 298px;
+}
+
+.tagGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 80%;
+}
+
+.tag {
+  background-color: white;
+  color: #286655;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.arrow {
+  color: white;
+  font-size: 24px;
+}
+
+.arrowImage {
+  width: 100%;
+  height: auto;
+}
+
+.cardContent {
+  margin-top: auto;
+}
+
+.cardContent h2, .cardContent h3 {
+  color: white;
+  font-family: "Plus Jakarta Sans", serif;
+  white-space: pre-line;
+  margin: 0 0 16px;
+}
+
+.cardContent h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.cardContent h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.cardContent p {
+  color: white;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .serviceCard {
+    height: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 30px 0 60px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .serviceCard {
+    height: 500px;
+  }
+
+  .tags {
+    margin-bottom: 200px;
+  }
+
+  .cardContent h2 {
+    font-size: 36px;
+  }
+
+  .cardContent h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceCard {
+    height: 400px;
+    padding: 20px;
+  }
+
+  .tags {
+    margin-bottom: 150px;
+  }
+
+  .tagGroup {
+    gap: 4px;
+  }
+
+  .tag {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .cardContent h2 {
+    font-size: 32px;
+  }
+
+  .cardContent h3 {
+    font-size: 24px;
+  }
+
+  .cardContent p {
+    font-size: 14px;
+  }
+}

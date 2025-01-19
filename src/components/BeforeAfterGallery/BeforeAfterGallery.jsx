@@ -39,7 +39,7 @@ function BeforeAfterGallery() {
     <div className="gallery-container" id="photo-gallery">
     <Row justify="space-around" align="top">
       <Col span={24}>
-      <h1 className="galleryHeading">Before/After Photo Gallery</h1>
+      
       
       <div className="buttons">
         {Object.keys(imageData).map(key => (
@@ -55,7 +55,7 @@ function BeforeAfterGallery() {
     </Row>
     <Row>
     <Col span={24}>
-          <h2>{category}</h2>
+          
 
           <div className="image-preview">
             <button onClick={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)} disabled={photoIndex === 0}><LeftOutlined /></button>

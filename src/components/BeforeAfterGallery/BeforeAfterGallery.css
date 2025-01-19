@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
 .section {
   padding: 0em 2em;
   display: flex;
@@ -6,14 +8,21 @@
 
 }
 
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
 .galleryContainer {
-  padding: 4em 2em 2em 2em;
+  padding: 2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .galleryHeading {
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 36px;
   text-align: center;
   margin-bottom: 0.5em;
@@ -22,12 +31,11 @@
 /* BeforeAfterGallery.css */
 .gallery-container {
   text-align: center;
-  margin: 60px;
   width: auto;
   align-items: center;
   display: block;
   justify-content: center;
-  padding: 0em 4em;
+  padding: 2em;
 }
 
 /* BeforeAfterGallery.css */
@@ -41,6 +49,7 @@
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+  min-width: 100px;
 }
 
 .buttons button:hover {
@@ -61,8 +70,9 @@
   font-weight: bold; /* Make it bold for better visibility */
 }
 
-.ant-tabs-tab .ant-tabs-tab-btn {
- /* color: #ccc;  Gray out inactive tabs */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #286655;
+  font-weight: bold;
 }
 
 .image-container {
@@ -105,7 +115,28 @@
   font-style: italic;
 }
 
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .section {
+    padding: 0 1.5em;
+  }
 
+  .gallery-container {
+    padding: 0 1.5em 1.5em;
+  }
+
+  .galleryContainer {
+    padding: 1.5em;
+  }
+
+  .galleryHeading {
+    font-size: 32px;
+  }
+
+  .image-container {
+    max-width: 600px;
+  }
+}
 
 /* Responsive adjustments for stacking columns on smaller screens */
 @media (max-width: 768px) {

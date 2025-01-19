@@ -26,7 +26,7 @@ const MyFooter = () => (
     </Row>
     <Row>
       <Col span={24}>
-        <p className={styles.footerCopyRight}>©2024 &nbsp;&nbsp;<img src="/favicons/favicon-24x24.png" alt="leafline icon" width="14px"  />&nbsp;&nbsp; Leafline Garden Design LLC</p>
+        <p className={styles.footerCopyRight}>©2025 &nbsp;&nbsp;<img src="/favicons/favicon-24x24.png" alt="leafline icon" width="14px"  />&nbsp;&nbsp; Leafline Garden Design LLC</p>
         <p className={styles.footerCopyRight}><i>License #: LEAFLGD763C8</i></p>
       </Col>
     </Row>

@@ -1,0 +1,49 @@
+.navigation {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 80px;
+  position: relative;
+}
+
+.navigation .company-logo-menu {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 356px;
+  position: relative;
+}
+
+.navigation .logo-white {
+  height: 126.11px;
+  object-fit: cover;
+  position: relative;
+  width: 300px;
+}
+
+.navigation .navbar {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 48px;
+  position: relative;
+}
+
+.navigation .text-wrapper {
+  color: var(--white);
+  font-family: var(--heading-7-font-family);
+  font-size: var(--heading-7-font-size);
+  font-style: var(--heading-7-font-style);
+  font-weight: var(--heading-7-font-weight);
+  letter-spacing: var(--heading-7-letter-spacing);
+  line-height: var(--heading-7-line-height);
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.navigation .icons {
+  flex: 0 0 auto;
+  position: relative;
+}

@@ -1,0 +1,102 @@
+.ourWorkSection {
+  background-color: #F4F1DE;
+  padding: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+.ourWorkContainer {
+  position: relative;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 60px;
+  margin-left: 40px;
+  color: #286655;
+  text-align: left;
+}
+
+.intro h1 {
+  color: #286655;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: clamp(40px, 5vw, 80px);
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 40px;
+}
+
+.intro span {
+  color: #28665556;
+}
+
+.title {
+  color: #e1ebe2;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .ourWorkSection {
+    padding: 20px;
+  }
+  .ourWorkContainer {
+    position: relative;
+    padding: 10px;
+  }
+
+  .header {
+    margin-left: 20px;
+  }
+
+  .intro h1 {
+    margin: 0 20px;
+  }
+  
+  .handlerTop p,
+  .handlerBot p {
+    width: 90%;
+  }
+
+  .numberTop,
+  .numberBot {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ourWorkSection {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  .header {
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ourWorkSection {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+    margin: 20px 0px;
+  }
+
+  .header {
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+}

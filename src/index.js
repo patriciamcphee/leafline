@@ -2,17 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero.js';
-import AboutUs from './components/AboutUs/AboutUs.js';
-import OurServices from './components/OurServices/OurServices.js';
-import LetsConnect from './components/LetsConnect/LetsConnect.js';
-import MyFooter from './components/Footer/Footer.js';
+import HeroSection from './components/Hero/HeroSection.jsx';
+import AboutSection from './components/AboutSection/AboutSection.jsx';
+import HowItWorksSection from './components/HowItWorksSection/HowItWorksSection.jsx';
+import OurWorkSection from './components/OurWorkSection/OurWorkSection.jsx';
+import CtaSection from './components/CtaButton/CtaButton.jsx';
+import FooterSection from './components/FooterSection/FooterSection.jsx';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
-import FaqSection from './components/CollapsibleFAQ/CollapsibleFAQ.js';
-import BeforeAfterGallery from './components/BeforeAfterGallery/BeforeAfterGallery.jsx';
+import ServicesGallery from './components/ServicesGallery/ServicesGallery.jsx';
 
-import { Divider, ConfigProvider } from 'antd';
+import { ConfigProvider } from 'antd';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,19 +27,14 @@ root.render(
     >
   <React.StrictMode>
     <BackToTopButton />
-    <Navbar />
-    <Hero />
-    <AboutUs />
-    <Divider />
-    <OurServices />
-    <Divider />
-    <BeforeAfterGallery />
-    <Divider />
-    <LetsConnect />
-    <Divider />
-    <FaqSection />
-    <MyFooter />
-    
+    <HeroSection />
+    <AboutSection />
+    <ServicesGallery />
+
+    <OurWorkSection />
+    <HowItWorksSection />
+    <CtaSection />
+    <FooterSection />
   </React.StrictMode>
   </ConfigProvider>
 );

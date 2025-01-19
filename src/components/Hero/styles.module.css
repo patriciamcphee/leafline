@@ -1,97 +1,221 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
 
- .heroBanner {
-  background-repeat: no-repeat;
-  background-image: url("../../../public/images/72aa300c04e46df518fb3f6e04de2ad438d325ed-1.jpeg");
-  height: 500px; /* Fixed height; adjust as needed */
-  width: 100%;
-  background-size: cover; /* Covers the area, may crop */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat;
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../../static/images/japanese-garden-1.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  padding: 20px 60px;
+  margin: 0 auto;
+}
+
+.navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  color: white; /* Ensures text is readable; adjust based on your image */
-  text-align: center;
+  padding: 20px 0;
 }
 
-.heroBanner h1 {
-  font-size: 84px;
-  font-weight: 400;
+.logoContainer img {
+  display: block;
+  width: 280px;
+  height: auto;
+  object-fit: contain;
+}
+
+.desktopNav {
+  display: flex;
+  gap: 48px;
+}
+
+.navLink {
   color: white;
-  text-align: center;
-  padding: 0em 0;
-  text-shadow: 2px 2px 6px #6B4423, 1px 1px 8px #6889a1;
-  /*text-shadow: 2px 2px 10px #6B4423;*/
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  transition: opacity 0.3s;
 }
 
-.heroBackground {
-  padding: 1em;
-  justify-content: center;
+.navLink:hover {
+  opacity: 0.8;
+}
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: white;
+  left: 0;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { bottom: -8px; }
+
+.mobileNav {
+  display: none;
+}
+
+.heroContent {
+  padding: 60px 0;
+}
+
+.textContent {
+  max-width: 800px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(42px, 6vw, 110px);
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+
+.highlight {
+  color: #e1ebe2;
+  font-weight: 800;
+}
+
+.description {
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(24px, 3vw, 28px);
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 30px 0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 22px;
+  margin-top: 40px;
   align-items: center;
-  /*
-  background-color: white;
-  opacity: 85%;
-  border-radius: 20px;
-  */
 }
 
-.intro-text {
-  padding: 40px 0px 0px 0;
-  text-align: center;
-  font-size: 24x;
+.primaryButton {
+  background: white;
+  text-decoration: none;
+  color: #2E5D4B;
+  border: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.introTextButton {
-  font-weight: 600;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+.primaryButton:hover {
+  background: #f0f0f0;
 }
 
-
-
-@media only screen and (min-width: 268px) and (max-width: 480px) {
-  /* Styles for viewports with a maximum height of 700px */
-
-  .heroBanner {
-    padding: 1em;
-    height: 200px; /* Fixed height; adjust as needed */
-  }
-
-  .heroBanner h1 {
-    padding: 0;
-    font-size: 20px;
-    margin: 0 1em;
-  }
+.secondaryButton {
+  background: none;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 0rem;
-    height: 420px; /* Fixed height; adjust as needed */
-  }
-  .heroBanner h1 {
-    padding: 0;
-    font-size: 48px;
-  
-  }
-
-  .introTextButton {
-    margin-top: 0px;
-  
-  }
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 4px;
 }
 
+@media (max-width: 768px) {
 
+  .title {
+    font-size: clamp(56px, 6vw, 60px);
+  }
 
+  .container {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .navigation {
+    padding: 10px 0;
+  }
 
+  .logoContainer img {
+    width: 180px;
+  }
 
-.buttons {
+  .desktopNav {
+    display: none;
+  }
 
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: rgba(40, 102, 85, 0.95);
+    padding: 20px;
+    transition: right 0.3s;
+  }
+
+  .mobileNav.open {
+    right: 0;
+  }
+
+  .mobileNavLink {
+    color: white;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .heroContent {
+    padding: 20px 0;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
 }
