@@ -126,10 +126,6 @@
     padding: 16px 24px;
   }
 
-  .secondaryButton {
-    border: 1px solid white;
-    padding: 15px 24px;
-  }
 }
 
 @media (max-width: 480px) {
