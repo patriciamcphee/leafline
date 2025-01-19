@@ -56,9 +56,9 @@ const FooterSection = () => {
           </p>
           <div className={styles.legalLinks}>
           <p className={styles.copyrightText}>License #: LEAFLGD763C8</p><span className={styles.separator}>|</span>
-            <a href="#privacy">PRIVACY POLICY</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
             <span className={styles.separator}>|</span>
-            <a href="#terms">TERMS & CONDITIONS</a>
+            <a href="terms.html">TERMS & CONDITIONS</a>
           </div>
         </div>
       </footer>
