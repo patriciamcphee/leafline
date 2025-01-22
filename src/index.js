@@ -12,6 +12,7 @@ import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
 import ServicesGallery from './components/ServicesGallery/ServicesGallery.jsx';
 
 import { ConfigProvider } from 'antd';
+import { Analytics } from "@vercel/analytics/react"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -35,6 +36,7 @@ root.render(
     <HowItWorksSection />
     <CtaSection />
     <FooterSection />
+    <Analytics/>
   </React.StrictMode>
   </ConfigProvider>
 );
