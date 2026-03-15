@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { ConfigProvider } from 'antd';
 import { Analytics } from "@vercel/analytics/react"
@@ -14,6 +15,7 @@ import CtaSection from './components/CtaButton/CtaButton.jsx';
 import FooterSection from './components/FooterSection/FooterSection.jsx';
 import BackToTopButton from './components/BackToTopButton/BackToTopButton.js';
 import ServicesGallery from './components/ServicesGallery/ServicesGallery.jsx';
+import FloralCreations from './components/FloralCreations/FloralCreations.jsx';
 
 
 // New SEO components
@@ -23,7 +25,7 @@ const SeoMetadata = () => {
       <title>Professional Garden & Landscape Design Services | Leafline Garden Design</title>
       <meta name="description" content="Transform your outdoor space with expert garden design, pruning, and landscape architecture services. We create sustainable, beautiful gardens that last." />
       <meta name="keywords" content="garden design, landscape design, pruning, outdoor transformation, professional landscaping, sustainable gardens" />
-      
+
       {/* Schema.org data for rich snippets */}
       <script type="application/ld+json">
         {JSON.stringify({
@@ -42,7 +44,7 @@ const SeoMetadata = () => {
             },
             "address": {
               "@type": "PostalAddress",
-              "addressRegion": "WA", 
+              "addressRegion": "WA",
               "postalCode": "98037",
               "addressCountry": "US"
             },
@@ -87,42 +89,52 @@ const SeoMetadata = () => {
   );
 };
 
-// Enhanced main component with semantic sections
-const App = () => {
+// Home page component with semantic sections
+const HomePage = () => {
   return (
     <main id="main-content" role="main">
       <SeoMetadata />
-      
+
       <section id="hero" role="banner" aria-labelledby="hero-title">
         <HeroSection />
       </section>
-      
+
       <section id="about" aria-labelledby="about-title">
         <AboutSection />
       </section>
-      
+
       <section id="services" aria-labelledby="services-title">
         <ServicesGallery />
       </section>
-      
+
       <section id="portfolio" aria-labelledby="portfolio-title">
         <OurWorkSection />
       </section>
-      
+
       <section id="process" aria-labelledby="process-title">
         <HowItWorksSection />
       </section>
-      
+
       <section id="contact" aria-labelledby="contact-title">
         <CtaSection />
       </section>
-      
+
       <footer role="contentinfo">
         <FooterSection />
       </footer>
-      
+
       <BackToTopButton />
     </main>
+  );
+};
+
+// App with routing
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/floral-creations" element={<FloralCreations />} />
+    </Routes>
   );
 };
 
@@ -139,8 +151,10 @@ root.render(
       }}
     >
       <React.StrictMode>
-        <App />
-        <Analytics/>
+        <BrowserRouter>
+          <App />
+          <Analytics/>
+        </BrowserRouter>
       </React.StrictMode>
     </ConfigProvider>
   </HelmetProvider>

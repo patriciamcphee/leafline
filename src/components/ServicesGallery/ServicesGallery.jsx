@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card } from 'antd';
 import {
   Leaf,
@@ -186,6 +187,13 @@ const ServicesGallery = () => {
                 {tag.label}
               </button>
             ))}
+            <Link
+              to="/floral-creations"
+              className={styles.tag}
+              style={{ textDecoration: 'none' }}
+            >
+              Floral Creations &rarr;
+            </Link>
           </div>
         </div>
 

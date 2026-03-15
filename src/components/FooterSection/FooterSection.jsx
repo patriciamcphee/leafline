@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import ColorLogo from "../../img/logo-color.svg";
 
@@ -34,6 +35,7 @@ const FooterSection = () => {
                 <p>LANDSCAPE DESIGN</p>
                 <p>HOME GARDEN</p>
                 <p>PLANT SELECTION</p>
+                <Link to="/floral-creations" style={{ textDecoration: 'none', color: 'inherit' }}>FLORAL CREATIONS</Link>
               </nav>
             </div>
 
