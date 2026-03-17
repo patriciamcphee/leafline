@@ -99,7 +99,7 @@ const FloralCreations = () => {
           </Link></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#process">Our Process</a></li>
-          <li><a href="https://white-glacier-0a09f7a1e.2.azurestaticapps.net/flowers" className={styles.navPill}>Request an Arrangement</a></li>
+          <li><a href="https://form.leaflinegardendesign.com/floral-creations" className={styles.navPill}>Request an Arrangement</a></li>
         </ul>
       </nav>
 
@@ -118,7 +118,7 @@ const FloralCreations = () => {
                 View Our Work
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </a>
-              <a href="#request" className={styles.btnGhost}>Request an Arrangement</a>
+              <a href="https://form.leaflinegardendesign.com/floral-creations" className={styles.btnGhost}>Request an Arrangement</a>
             </div>
             <div className={styles.heroTags}>
               <span className={styles.heroTag}><span className={styles.heroTagDot}></span> Custom, every time</span>
@@ -240,7 +240,7 @@ const FloralCreations = () => {
           <span className={`${styles.sectionChip} ${styles.ctaChip}`}>Ready to Begin?</span>
           <h2 className={styles.ctaHeadline}>Let's create something beautiful</h2>
           <p className={styles.ctaBody}>Tell us about your occasion, your style, and what you're dreaming of. Every arrangement is made to order—so it's always one of a kind.</p>
-          <a href="https://white-glacier-0a09f7a1e.2.azurestaticapps.net/flowers" className={styles.btnGreen}>
+          <a href="https://form.leaflinegardendesign.com/floral-creations" className={styles.btnGreen}>
             Request a Custom Arrangement
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="white" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
@@ -266,7 +266,7 @@ const FloralCreations = () => {
             <ul className={styles.footerLinks}>
               <li><a href="#gallery">Our Gallery</a></li>
               <li><a href="#process">How It Works</a></li>
-              <li><a href="https://white-glacier-0a09f7a1e.2.azurestaticapps.net/flowers">Request an Arrangement</a></li>
+              <li><a href="https://form.leaflinegardendesign.com/floral-creations">Request an Arrangement</a></li>
               <li><Link to="/">Back to Main Site</Link></li>
             </ul>
           </div>

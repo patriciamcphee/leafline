@@ -54,7 +54,7 @@ const FooterSection = () => {
 
         <div className={styles.copyright}>
           <p className={styles.copyrightText}>
-            COPYRIGHT © 2025. ALL RIGHTS RESERVED.
+            COPYRIGHT © 2026. ALL RIGHTS RESERVED.
           </p>
           <div className={styles.legalLinks}>
           <p className={styles.copyrightText}>License #: LEAFLGD763C8</p><span className={styles.separator}>|</span>

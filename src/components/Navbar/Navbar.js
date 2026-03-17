@@ -53,7 +53,7 @@ function Navbar() {
               (206) 880-0886
             </li>
             <li onClick={removeActive}>
-            <Button type="primary" shape="round" className={styles.contactButton} href="landscape-request.html" target="_blank">
+            <Button type="primary" shape="round" className={styles.contactButton} href="https://form.leaflinegardendesign.com" target="_blank">
                 Request a Consultation!
                 </Button>
             </li>
