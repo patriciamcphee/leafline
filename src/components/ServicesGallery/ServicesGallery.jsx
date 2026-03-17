@@ -188,6 +188,8 @@ const ServicesGallery = () => {
             ))}
             <a
               href="https://form.leaflinegardendesign.com/floral-creations"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.tag}
               style={{ textDecoration: 'none' }}
             >
