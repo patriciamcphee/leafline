@@ -1,0 +1,27 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "headers": {
+        "X-DNS-Prefetch-Control": "on"
+      }
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html"
+    }
+  },
+  "globalHeaders": {
+    "Cache-Control": "public, max-age=31536000, immutable"
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/images/*",
+      "/img/*",
+      "/favicons/*",
+      "*.{css,js,png,jpg,jpeg,webp,svg,ico,json,txt}"
+    ]
+  }
+}
