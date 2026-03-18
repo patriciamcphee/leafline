@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { ConfigProvider } from 'antd';
-import { Analytics } from "@vercel/analytics/react"
 import './index.css';
 
 // Import your existing components
@@ -153,7 +152,6 @@ root.render(
       <React.StrictMode>
         <BrowserRouter>
           <App />
-          <Analytics/>
         </BrowserRouter>
       </React.StrictMode>
     </ConfigProvider>

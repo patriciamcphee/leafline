@@ -23,7 +23,8 @@ export const GallerySection = () => {
           <Col>
             <img
               alt="Our WORK"
-              src="/img/our-work.png"
+              loading="lazy"
+              src="/img/our-work.webp"
               style={{ width: "253.56px" }}
             />
           </Col>
@@ -37,7 +38,7 @@ export const GallerySection = () => {
               style={{
                 width: "302px",
                 height: "694px",
-                backgroundImage: "url(/img/left-content.png)",
+                backgroundImage: "url(/img/left-content.webp)",
                 backgroundSize: "cover",
                 backgroundPosition: "50% 50%",
               }}
@@ -50,7 +51,7 @@ export const GallerySection = () => {
                   style={{
                     width: "302px",
                     height: "287px",
-                    backgroundImage: "url(/img/photo.png)",
+                    backgroundImage: "url(/img/photo.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: "50% 50%",
                   }}
@@ -61,7 +62,7 @@ export const GallerySection = () => {
                   style={{
                     width: "302px",
                     height: "383px",
-                    backgroundImage: "url(/img/photo-1.png)",
+                    backgroundImage: "url(/img/photo-1.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: "50% 50%",
                   }}
@@ -76,7 +77,7 @@ export const GallerySection = () => {
                   style={{
                     width: "302px",
                     height: "480px",
-                    backgroundImage: "url(/img/photo-activated.png)",
+                    backgroundImage: "url(/img/photo-activated.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: "50% 50%",
                     backgroundColor: "#374836bf",
@@ -130,7 +131,7 @@ export const GallerySection = () => {
                   style={{
                     width: "302px",
                     height: "190px",
-                    backgroundImage: "url(/img/photo-2.png)",
+                    backgroundImage: "url(/img/photo-2.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: "50% 50%",
                   }}

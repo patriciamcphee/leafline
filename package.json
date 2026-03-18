@@ -9,7 +9,6 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@vercel/analytics": "^1.4.1",
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
     "antd": "^5.14.2",
@@ -63,7 +62,8 @@
     "terser-webpack-plugin": "^5.2.5",
     "web-vitals": "^2.1.4",
     "webpack-manifest-plugin": "^4.0.2",
-    "workbox-webpack-plugin": "^7.4.0"
+    "workbox-webpack-plugin": "^7.4.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -75,6 +75,8 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "optimize-images": "node scripts/optimize-images.js",
+    "prebuild": "node scripts/optimize-images.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },

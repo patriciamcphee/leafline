@@ -9,7 +9,7 @@ const MyFooter = () => (
   <Footer className={styles.footerContainer}>
     <Row gutter={[60]} justify="space-around" align="top">
     <Col xs={24} sm={12} md={8}>
-        <p className={styles.footerBody}><a href="https://www.leaflinegarden.design"><img className={styles.logo} src="/logo-white-full.png" alt="logo white" /></a></p>
+        <p className={styles.footerBody}><a href="https://www.leaflinegarden.design"><img className={styles.logo} src="/logo-white-full.png" alt="logo white" loading="lazy" /></a></p>
 </Col>
 <Col xs={24} sm={12} md={8} >
         <p className={styles.footerBody}>
@@ -26,7 +26,7 @@ const MyFooter = () => (
     </Row>
     <Row>
       <Col span={24}>
-        <p className={styles.footerCopyRight}>©2025 &nbsp;&nbsp;<img src="/favicons/favicon-24x24.png" alt="leafline icon" width="14px"  />&nbsp;&nbsp; Leafline Garden Design LLC</p>
+        <p className={styles.footerCopyRight}>©2025 &nbsp;&nbsp;<img src="/favicons/favicon-24x24.png" alt="leafline icon" width="14px" loading="lazy" />&nbsp;&nbsp; Leafline Garden Design LLC</p>
         <p className={styles.footerCopyRight}><i>License #: LEAFLGD763C8</i></p>
       </Col>
     </Row>

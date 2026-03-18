@@ -6,26 +6,26 @@ const ServicesSection = () => {
     {
       title: "HOME\nGARDEN",
       description: "Crafting the perfect garden space for your home. Whether indoor or outdoor, we got it all ready for your greenery needs.",
-      image: "/img/item-1-activated.png",
+      image: "/img/item-1-activated.webp",
       tags: ["Home", "Garden", "Landscape Design", "Expert"],
       featured: true
     },
     {
       title: "PLANT\nSELECTION",
       description: "Hand-picked greenery for your oasis.",
-      image: "/img/card.png",
+      image: "/img/card.webp",
       arrowImage: "/img/arrow.svg"
     },
     {
       title: "HARD-\nSCAPING",
       description: "Adding structure to your garden landscape.",
-      image: "/img/card-1.png",
+      image: "/img/card-1.webp",
       arrowImage: "/img/arrow-2.svg"
     },
     {
       title: "PUBLIC\nGARDEN",
       description: "Expert advice for public garden and city parks.",
-      image: "/img/card-2.png",
+      image: "/img/card-2.webp",
       arrowImage: "/img/arrow-2.svg"
     }
   ];
@@ -64,9 +64,10 @@ const ServicesSection = () => {
               ) : (
                 <>
                   {service.arrowImage && (
-                    <img 
-                      src={service.arrowImage} 
-                      alt="Direction arrow" 
+                    <img
+                      src={service.arrowImage}
+                      alt="Direction arrow"
+                      loading="lazy"
                       className={styles.arrowImage}
                     />
                   )}

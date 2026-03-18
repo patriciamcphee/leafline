@@ -1,7 +1,7 @@
 .ctaSection {
   background-color: #F4F1DE;
   padding: 40px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../../static/images/landscape-design-7.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../../static/images/landscape-design-7.webp);
   background-position: center;
   background-size: cover;
 }

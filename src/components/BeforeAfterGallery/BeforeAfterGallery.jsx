@@ -9,20 +9,20 @@ import './BeforeAfterGallery.css';
 
 const imageData = {
   Pruning:  [
-      { url: '/images/pruning/weeping-waterfall-japanese-maple_before-2.jpg', alt: 'Pruning before - Overgrown branches blocking pathway', caption: 'BEFORE - Trees blocking the pathway' },
-      { url: '/images/pruning/weeping-waterfall-japanese-maple_before-3.jpg', alt: 'Pruning before - garden needs pruning', caption: 'BEFORE - The garden is in need of pruning' },
-      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-1.jpg', alt: 'Pruning after - bushes pruned', caption: 'AFTER - Bushes pruned nicely' },
-      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-4.jpg', alt: 'Pruning before - bush overgrown', caption: 'AFTER - ' },
-      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-5.jpg', alt: 'Pruning before - bush overgrown', caption: 'AFTER - ' },
-      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-6.jpg', alt: 'Pruning before - bush overgrown', caption: 'AFTER - ' },
-      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-7.jpg', alt: 'Pruning before - bush overgrown', caption: 'AFTER - ' },
+      { url: '/images/pruning/weeping-waterfall-japanese-maple_before-2.webp', alt: 'Pruning before - Overgrown branches blocking pathway', caption: 'BEFORE - Trees blocking the pathway' },
+      { url: '/images/pruning/weeping-waterfall-japanese-maple_before-3.webp', alt: 'Pruning before - garden needs pruning', caption: 'BEFORE - The garden is in need of pruning' },
+      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-1.webp', alt: 'Pruning after - bushes pruned', caption: 'AFTER - Bushes pruned nicely' },
+      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-4.webp', alt: 'Pruning before - bush overgrown', caption: 'AFTER - ' },
+      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-5.webp', alt: 'Pruning before - bush overgrown', caption: 'AFTER - ' },
+      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-6.webp', alt: 'Pruning before - bush overgrown', caption: 'AFTER - ' },
+      { url: '/images/pruning/weeping-waterfall-japanese-maple_after-7.webp', alt: 'Pruning before - bush overgrown', caption: 'AFTER - ' },
     ],
 
   // Additional categories follow the same structure...
   Edging: [
-      { url: 'images/bed-edge/bed-edge-before.jpg', alt: 'Edging before', caption: 'BEFORE - Overgrown grass over bed edging' },
-      { url: 'images/bed-edge/bed-edge-after.jpg', alt: 'Edging after', caption: 'AFTER - Overgrown grass after cleanup' },
-      { url: 'images/bed-edge/bed-edge-after-1.jpg', alt: 'Edging after', caption: 'AFTER - Overgrown grass after cleanup' },
+      { url: 'images/bed-edge/bed-edge-before.webp', alt: 'Edging before', caption: 'BEFORE - Overgrown grass over bed edging' },
+      { url: 'images/bed-edge/bed-edge-after.webp', alt: 'Edging after', caption: 'AFTER - Overgrown grass after cleanup' },
+      { url: 'images/bed-edge/bed-edge-after-1.webp', alt: 'Edging after', caption: 'AFTER - Overgrown grass after cleanup' },
     ],
 };
 
@@ -59,7 +59,7 @@ function BeforeAfterGallery() {
 
           <div className="image-preview">
             <button onClick={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)} disabled={photoIndex === 0}><LeftOutlined /></button>
-            <img className="image-container" src={currentImage.url} alt={currentImage.alt} onClick={() => setIsOpen(true)} />
+            <img className="image-container" src={currentImage.url} alt={currentImage.alt} loading="lazy" onClick={() => setIsOpen(true)} />
             <button onClick={() => setPhotoIndex((photoIndex + 1) % images.length)} disabled={photoIndex === images.length - 1}><RightOutlined /></button>
           </div>
         </Col>

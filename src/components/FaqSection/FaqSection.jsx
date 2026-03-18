@@ -39,7 +39,7 @@ export const FaqSection = () => {
               <Image
                 width={431}
                 height={368}
-                src="/images/landscape-design-1.jpeg"
+                src="/images/landscape-design-1.webp"
                 preview={false}
                 style={{ borderRadius: "20px" }}
               />

@@ -90,6 +90,7 @@ const ServiceSection = ({ title, description, services, imageSrc }) => {
           <img
             src={imageSrc}
             alt={`${title} service`}
+            loading="lazy"
             className={styles.sectionImage}
           />
         </div>
@@ -142,7 +143,7 @@ const ServicesGallery = () => {
             title="GARDEN DESIGN"
             description="Transform your outdoor space with our Garden Design service. Our landscape architects and horticultural experts carefully craft designs that blend artistry with science to create captivating spaces. We consider every aspect of your property—from sustainable native plants to innovative hardscaping—to bring your vision to life. Whether you envision a peaceful meditation garden, a lively entertainment area, or a beautiful edible landscape, our designs harmonize with the natural environment while fulfilling your unique needs."
             services={gardenDesignServices}
-            imageSrc="/images/landscape-design-5.jpeg"
+            imageSrc="/images/landscape-design-5.webp"
           />
         );
       case 'fine-pruning':
@@ -151,7 +152,7 @@ const ServicesGallery = () => {
             title="FINE PRUNING"
             description="Our Fine Pruning service combines horticultural expertise with meticulous craftsmanship to shape and maintain your plants. We ensure both optimal health and stunning visual appeal through precise, thoughtful cuts guided by botanical knowledge. Our skilled technicians master the delicate balance between aesthetic refinement and plant vitality, making pruning decisions that enhance your garden's natural beauty while promoting robust, balanced growth. Every cut contributes to both the immediate appearance and long-term health of your valued plants."
             services={pruningServices}
-            imageSrc="/images/pruning-4.jpeg"
+            imageSrc="/images/pruning-4.webp"
           />
         );
       case 'maintenance':
@@ -160,7 +161,7 @@ const ServicesGallery = () => {
             title="MAINTENANCE SERVICES"
             description="Our garden maintenance services combine expert knowledge with personal dedication to nurture your outdoor spaces throughout every season. We specialize in new plantings, mulching, invasive species management, and edge maintenance, ensuring your garden flourishes with natural beauty and sustained health. Our meticulous approach and unwavering commitment to excellence preserve your garden's vibrancy and vitality year-round."
             services={maintenanceServices}
-            imageSrc="/images/mulching-1.jpeg"
+            imageSrc="/images/mulching-1.webp"
           />
         );
       default:
