@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Row, Col } from 'antd';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
@@ -46,10 +46,12 @@ function BeforeAfterGallery() {
       });
   }, []);
 
-  const allImages = [...SEED_IMAGES, ...dynamicImages];
-  const categories = orderedCategories(allImages);
-  const grouped = groupByCategory(allImages);
-  const images = category ? (grouped[category] || []) : [];
+  const allImages = useMemo(() => [...SEED_IMAGES, ...dynamicImages], [dynamicImages]);
+  const categories = useMemo(() => orderedCategories(allImages), [allImages]);
+  const images = useMemo(
+    () => (category ? (groupByCategory(allImages)[category] || []) : []),
+    [allImages, category]
+  );
 
   useEffect(() => {
     if (!category && categories.length) setCategory(categories[0]);
