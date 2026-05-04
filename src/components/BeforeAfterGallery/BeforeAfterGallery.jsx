@@ -48,17 +48,30 @@ function BeforeAfterGallery() {
 
   const allImages = [...SEED_IMAGES, ...dynamicImages];
   const categories = orderedCategories(allImages);
+  const grouped = groupByCategory(allImages);
+  const images = category ? (grouped[category] || []) : [];
 
   useEffect(() => {
     if (!category && categories.length) setCategory(categories[0]);
   }, [category, categories]);
 
+  // Preload the neighbouring images so chevron clicks feel instant.
+  useEffect(() => {
+    if (images.length < 2) return;
+    const next = images[(photoIndex + 1) % images.length];
+    const prev = images[(photoIndex - 1 + images.length) % images.length];
+    [next, prev].forEach((img) => {
+      if (img?.url) {
+        const i = new Image();
+        i.src = img.url;
+      }
+    });
+  }, [photoIndex, images]);
+
   if (!category || categories.length === 0) {
     return <div className="gallery-container"><p>Gallery is currently empty.</p></div>;
   }
 
-  const grouped = groupByCategory(allImages);
-  const images = grouped[category] || [];
   const currentImage = images[photoIndex];
 
   if (!currentImage) {
