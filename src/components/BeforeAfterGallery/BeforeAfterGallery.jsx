@@ -59,6 +59,14 @@ function BeforeAfterGallery({ service = 'garden' }) {
     [allImages, category]
   );
 
+  // Reset selection when the gallery's service changes — a category from
+  // the previous service won't exist in the new service's grouped map and
+  // would render the empty-state.
+  useEffect(() => {
+    setCategory(null);
+    setPhotoIndex(0);
+  }, [service]);
+
   useEffect(() => {
     if (!category && categories.length) setCategory(categories[0]);
   }, [category, categories]);
