@@ -28,7 +28,7 @@ function orderedCategories(images) {
   return order;
 }
 
-function BeforeAfterGallery() {
+function BeforeAfterGallery({ service = 'garden' }) {
   const [dynamicImages, setDynamicImages] = useState([]);
   const [category, setCategory] = useState(null);
   const [photoIndex, setPhotoIndex] = useState(0);
@@ -46,7 +46,13 @@ function BeforeAfterGallery() {
       });
   }, []);
 
-  const allImages = useMemo(() => [...SEED_IMAGES, ...dynamicImages], [dynamicImages]);
+  // Filter to entries for this gallery's service. Legacy entries without
+  // an explicit service are treated as garden so the existing portfolio
+  // keeps rendering on the garden gallery.
+  const allImages = useMemo(() => {
+    const merged = [...SEED_IMAGES, ...dynamicImages];
+    return merged.filter((img) => (img.service || 'garden') === service);
+  }, [dynamicImages, service]);
   const categories = useMemo(() => orderedCategories(allImages), [allImages]);
   const images = useMemo(
     () => (category ? (groupByCategory(allImages)[category] || []) : []),
@@ -100,9 +106,13 @@ function BeforeAfterGallery() {
     );
   }
 
-  const captionText = currentImage.caption
-    ? `${currentImage.type.toUpperCase()} - ${currentImage.caption}`
-    : currentImage.type.toUpperCase();
+  // Garden entries get a BEFORE/AFTER prefix; flower entries just show the
+  // caption (the before/after concept doesn't apply to floral arrangements).
+  const captionText = service === 'flowers'
+    ? (currentImage.caption || '')
+    : (currentImage.caption
+        ? `${currentImage.type.toUpperCase()} - ${currentImage.caption}`
+        : currentImage.type.toUpperCase());
 
   return (
     <div className="gallery-container" id="photo-gallery">

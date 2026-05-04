@@ -11,6 +11,7 @@
  */
 export const SEED_IMAGES = [
   {
+    service: 'garden',
     category: 'Pruning',
     type: 'before',
     url: '/images/pruning/weeping-waterfall-japanese-maple_before-2.webp',
@@ -18,6 +19,7 @@ export const SEED_IMAGES = [
     alt: 'Pruning before - Overgrown branches blocking pathway',
   },
   {
+    service: 'garden',
     category: 'Pruning',
     type: 'before',
     url: '/images/pruning/weeping-waterfall-japanese-maple_before-3.webp',
@@ -25,6 +27,7 @@ export const SEED_IMAGES = [
     alt: 'Pruning before - garden needs pruning',
   },
   {
+    service: 'garden',
     category: 'Pruning',
     type: 'after',
     url: '/images/pruning/weeping-waterfall-japanese-maple_after-1.webp',
@@ -32,6 +35,7 @@ export const SEED_IMAGES = [
     alt: 'Pruning after - bushes pruned',
   },
   {
+    service: 'garden',
     category: 'Pruning',
     type: 'after',
     url: '/images/pruning/weeping-waterfall-japanese-maple_after-4.webp',
@@ -39,6 +43,7 @@ export const SEED_IMAGES = [
     alt: 'Pruning after',
   },
   {
+    service: 'garden',
     category: 'Pruning',
     type: 'after',
     url: '/images/pruning/weeping-waterfall-japanese-maple_after-5.webp',
@@ -46,6 +51,7 @@ export const SEED_IMAGES = [
     alt: 'Pruning after',
   },
   {
+    service: 'garden',
     category: 'Pruning',
     type: 'after',
     url: '/images/pruning/weeping-waterfall-japanese-maple_after-6.webp',
@@ -53,6 +59,7 @@ export const SEED_IMAGES = [
     alt: 'Pruning after',
   },
   {
+    service: 'garden',
     category: 'Pruning',
     type: 'after',
     url: '/images/pruning/weeping-waterfall-japanese-maple_after-7.webp',
@@ -60,6 +67,7 @@ export const SEED_IMAGES = [
     alt: 'Pruning after',
   },
   {
+    service: 'garden',
     category: 'Lawn Care',
     type: 'before',
     url: '/images/bed-edge/bed-edge-before.webp',
@@ -67,6 +75,7 @@ export const SEED_IMAGES = [
     alt: 'Edging before',
   },
   {
+    service: 'garden',
     category: 'Lawn Care',
     type: 'after',
     url: '/images/bed-edge/bed-edge-after.webp',
@@ -74,6 +83,7 @@ export const SEED_IMAGES = [
     alt: 'Edging after',
   },
   {
+    service: 'garden',
     category: 'Lawn Care',
     type: 'after',
     url: '/images/bed-edge/bed-edge-after-1.webp',
