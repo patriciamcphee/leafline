@@ -1,93 +1,14 @@
 /**
- * Static seed gallery entries — the starter images from before the
- * admin-driven gallery existed. These render on the Our Work section
- * alongside any dynamic entries fetched from the published submissions
- * manifest. Safe to trim or remove once real client work has replaced
- * these.
+ * Seed gallery entries — intentionally empty.
  *
- * URLs are relative to /public/images — kept in-repo rather than in
- * Blob because they pre-date any client submission and don't belong
- * attached to a submission record.
+ * The Our Work gallery now renders entirely from the published submissions
+ * manifest. Demo/starter photos that previously lived in this file are
+ * uploaded as a "Test User" submission via the admin dashboard so they
+ * flow through the same publish pipeline as real client work.
+ *
+ * If you ever need a static fallback (e.g. while the manifest URL is
+ * unreachable), add entries here in the shape:
+ *   { service: 'garden' | 'flowers', category, type: 'before' | 'after',
+ *     url, caption, alt }
  */
-export const SEED_IMAGES = [
-  {
-    service: 'garden',
-    category: 'Pruning',
-    type: 'before',
-    url: '/images/pruning/weeping-waterfall-japanese-maple_before-2.webp',
-    caption: 'Trees blocking the pathway',
-    alt: 'Pruning before - Overgrown branches blocking pathway',
-  },
-  {
-    service: 'garden',
-    category: 'Pruning',
-    type: 'before',
-    url: '/images/pruning/weeping-waterfall-japanese-maple_before-3.webp',
-    caption: 'The garden is in need of pruning',
-    alt: 'Pruning before - garden needs pruning',
-  },
-  {
-    service: 'garden',
-    category: 'Pruning',
-    type: 'after',
-    url: '/images/pruning/weeping-waterfall-japanese-maple_after-1.webp',
-    caption: 'Bushes pruned nicely',
-    alt: 'Pruning after - bushes pruned',
-  },
-  {
-    service: 'garden',
-    category: 'Pruning',
-    type: 'after',
-    url: '/images/pruning/weeping-waterfall-japanese-maple_after-4.webp',
-    caption: '',
-    alt: 'Pruning after',
-  },
-  {
-    service: 'garden',
-    category: 'Pruning',
-    type: 'after',
-    url: '/images/pruning/weeping-waterfall-japanese-maple_after-5.webp',
-    caption: '',
-    alt: 'Pruning after',
-  },
-  {
-    service: 'garden',
-    category: 'Pruning',
-    type: 'after',
-    url: '/images/pruning/weeping-waterfall-japanese-maple_after-6.webp',
-    caption: '',
-    alt: 'Pruning after',
-  },
-  {
-    service: 'garden',
-    category: 'Pruning',
-    type: 'after',
-    url: '/images/pruning/weeping-waterfall-japanese-maple_after-7.webp',
-    caption: '',
-    alt: 'Pruning after',
-  },
-  {
-    service: 'garden',
-    category: 'Lawn Care',
-    type: 'before',
-    url: '/images/bed-edge/bed-edge-before.webp',
-    caption: 'Overgrown grass over bed edging',
-    alt: 'Edging before',
-  },
-  {
-    service: 'garden',
-    category: 'Lawn Care',
-    type: 'after',
-    url: '/images/bed-edge/bed-edge-after.webp',
-    caption: 'Overgrown grass after cleanup',
-    alt: 'Edging after',
-  },
-  {
-    service: 'garden',
-    category: 'Lawn Care',
-    type: 'after',
-    url: '/images/bed-edge/bed-edge-after-1.webp',
-    caption: 'Overgrown grass after cleanup',
-    alt: 'Edging after',
-  },
-];
+export const SEED_IMAGES = [];

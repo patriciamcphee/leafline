@@ -76,7 +76,6 @@
   "scripts": {
     "start": "node scripts/start.js",
     "optimize-images": "node scripts/optimize-images.js",
-    "prebuild": "node scripts/optimize-images.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
